@@ -18,29 +18,29 @@ safetyapp = angular.module('starter', ['ionic'])
   });
 })
 
-safetyapp.directive('aircraftConfiguration', function() {
+safetyapp.directive('aircraftconfiguration', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/aircraftConfiguration.html";
+    directive.templateUrl = "../templates/aircraftconfiguration.html";
 
     return directive;
 });
 
-safetyapp.directive('airproxTCAS', function() {
+safetyapp.directive('airproxtcas', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/airproxTCAS.html";
+    directive.templateUrl = "../templates/airproxtcas.html";
 
     return directive;
 });
 
-safetyapp.directive('altitudeDeviation', function() {
+safetyapp.directive('altitudedeviation', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/altitudeDeviation.html";
+    directive.templateUrl = "../templates/altitudedeviation.html";
 
     return directive;
 });
@@ -58,7 +58,7 @@ safetyapp.directive('egpws', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/EGPWS.html";
+    directive.templateUrl = "../templates/egpws.html";
 
     return directive;
 });
@@ -90,11 +90,11 @@ safetyapp.directive('eventId', function() {
     return directive;
 });
 
-safetyapp.directive('fireSparksSmokeFumes', function() {
+safetyapp.directive('firesparkssmokefumes', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/fireSparksSmokeFumes.html";
+    directive.templateUrl = "../templates/firesparkssmokefumes.html";
 
     return directive;
 });
@@ -117,20 +117,20 @@ safetyapp.directive('flightIdentification', function() {
     return directive;
 });
 
-safetyapp.directive('laserBeamQuestionnaire', function() {
+safetyapp.directive('laserbeamquestionnaire', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/laserBeamQuestionnaire.html";
+    directive.templateUrl = "../templates/laserbeamquestionnaire.html";
 
     return directive;
 });
 
-safetyapp.directive('maintenanceError', function() {
+safetyapp.directive('maintenanceerror', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/maintenanceError.html";
+    directive.templateUrl = "../templates/maintenanceerror.html";
 
     return directive;
 });
@@ -162,29 +162,29 @@ safetyapp.directive('signUp', function() {
     return directive;
 });
 
-safetyapp.directive('systemFailure', function() {
+safetyapp.directive('systemfailure', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/systemFailure.html";
+    directive.templateUrl = "../templates/systemfailure.html";
 
     return directive;
 });
 
-safetyapp.directive('wakeTurbulence', function() {
+safetyapp.directive('waketurbulence', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/wakeTurbulence.html";
+    directive.templateUrl = "../templates/waketurbulence.html";
 
     return directive;
 });
 
-safetyapp.directive('wildlifeStrike', function() {
+safetyapp.directive('wildlifestrike', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/wildlifeStrike.html";
+    directive.templateUrl = "../templates/wildlifestrike.html";
 
     return directive;
 });
