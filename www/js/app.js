@@ -18,6 +18,15 @@ safetyapp = angular.module('starter', ['ionic', 'ngCookies'])
   });
 })
 
+safetyapp.directive('signin', function() {
+    var directive = {};
+
+    directive.restrict = 'E';
+    directive.templateUrl = "../templates/signin.html";
+
+    return directive;
+});
+
 safetyapp.directive('aircraftconfiguration', function() {
     var directive = {};
 
