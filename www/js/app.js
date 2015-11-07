@@ -18,14 +18,25 @@ safetyapp = angular.module('starter', ['ionic', 'ngCookies'])
   });
 })
 
-safetyapp.directive('signin', function() {
-    var directive = {};
+safetyapp.config(['$stateProvider', '$urlRouterProvider',
+function ($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise("/signin");
 
-    directive.restrict = 'E';
-    directive.templateUrl = "../templates/signin.html";
-
-    return directive;
-});
+  $stateProvider
+      .state('signIn', {
+          url: "/signin",
+          templateUrl: 'templates/signin.html'
+      })
+      .state('signUp', {
+          url: "/signup",
+          templateUrl: 'templates/signup.html'
+      })
+      .state('form', {
+          url: "/form",
+          templateUrl: 'templates/main.html'
+      })
+  }
+]);
 
 safetyapp.directive('aircraftconfiguration', function() {
     var directive = {};
@@ -54,7 +65,7 @@ safetyapp.directive('altitudedeviation', function() {
     return directive;
 });
 
-safetyapp.directive('crewInformation', function() {
+safetyapp.directive('crewinformation', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -72,7 +83,7 @@ safetyapp.directive('egpws', function() {
     return directive;
 });
 
-safetyapp.directive('eventCategory', function() {
+safetyapp.directive('eventcategory', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -81,7 +92,7 @@ safetyapp.directive('eventCategory', function() {
     return directive;
 });
 
-safetyapp.directive('eventDescription', function() {
+safetyapp.directive('eventdescription', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -90,7 +101,7 @@ safetyapp.directive('eventDescription', function() {
     return directive;
 });
 
-safetyapp.directive('eventId', function() {
+safetyapp.directive('eventid', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -108,7 +119,7 @@ safetyapp.directive('firesparkssmokefumes', function() {
     return directive;
 });
 
-safetyapp.directive('flightDetails', function() {
+safetyapp.directive('flightdetails', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -117,7 +128,7 @@ safetyapp.directive('flightDetails', function() {
     return directive;
 });
 
-safetyapp.directive('flightIdentification', function() {
+safetyapp.directive('flightidentification', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -158,15 +169,6 @@ safetyapp.directive('reportInfo', function() {
 
     directive.restrict = 'E';
     directive.templateUrl = "../templates/reportInfo.html";
-
-    return directive;
-});
-
-safetyapp.directive('signUp', function() {
-    var directive = {};
-
-    directive.restrict = 'E';
-    directive.templateUrl = "../templates/signUp.html";
 
     return directive;
 });

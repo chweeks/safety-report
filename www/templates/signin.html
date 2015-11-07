@@ -1,4 +1,4 @@
-<ion-content ng-controller="signInCtrl as signin">
+<ion-content ng-controller="signInCtrl as signin" style="margin-top: 90px;">
   <div class="list">
     <label class="item item-input">
       <input type="text" ng-model="email" placeholder="Email" required>
@@ -6,6 +6,7 @@
     <label class="item item-input">
       <input type="password" ng-model="password" placeholder="Password" required>
     </label>
+    <button class="button button-positive" ui-sref="signUp">Sign Up</button>
     <button class="button button-positive" ng-click="signin.postSignIn(email, password)">Sign In</button>
   </div>
 </ion-content>

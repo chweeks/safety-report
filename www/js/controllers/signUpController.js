@@ -6,6 +6,7 @@ safetyapp.controller('signUpCtrl', ['$http', '$cookies', function($http, $cookie
       $http.post('https://immense-castle-3453.herokuapp.com/users', postData, 'POST').success(function(data) {
         $cookies.put("auth_key", data.auth_key);
         $cookies.put('user_id', data.user_id);
+        $state.go('form')
       });
     };
 }]);
