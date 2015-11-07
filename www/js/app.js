@@ -54,7 +54,7 @@ safetyapp.directive('altitudedeviation', function() {
     return directive;
 });
 
-safetyapp.directive('crewInformation', function() {
+safetyapp.directive('crewinformation', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -72,7 +72,7 @@ safetyapp.directive('egpws', function() {
     return directive;
 });
 
-safetyapp.directive('eventCategory', function() {
+safetyapp.directive('eventcategory', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -81,7 +81,7 @@ safetyapp.directive('eventCategory', function() {
     return directive;
 });
 
-safetyapp.directive('eventDescription', function() {
+safetyapp.directive('eventdescription', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -90,7 +90,7 @@ safetyapp.directive('eventDescription', function() {
     return directive;
 });
 
-safetyapp.directive('eventId', function() {
+safetyapp.directive('eventid', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -108,7 +108,7 @@ safetyapp.directive('firesparkssmokefumes', function() {
     return directive;
 });
 
-safetyapp.directive('flightDetails', function() {
+safetyapp.directive('flightdetails', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -117,7 +117,7 @@ safetyapp.directive('flightDetails', function() {
     return directive;
 });
 
-safetyapp.directive('flightIdentification', function() {
+safetyapp.directive('flightidentification', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -144,7 +144,7 @@ safetyapp.directive('maintenanceerror', function() {
     return directive;
 });
 
-safetyapp.directive('meterologicalInfo', function() {
+safetyapp.directive('meterologicalinfo', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -153,7 +153,7 @@ safetyapp.directive('meterologicalInfo', function() {
     return directive;
 });
 
-safetyapp.directive('reportInfo', function() {
+safetyapp.directive('reportinfo', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -162,7 +162,7 @@ safetyapp.directive('reportInfo', function() {
     return directive;
 });
 
-safetyapp.directive('signUp', function() {
+safetyapp.directive('signup', function() {
     var directive = {};
 
     directive.restrict = 'E';
