@@ -1,42 +1,80 @@
-<h2> 19 </h2>
+<h2> Altitude Deviation </h2>
 
 Deviation detected by
-<input type="text"> Required <br>
+<label class="item item-input">
+  <input type="text" placeholder="Deviation detected by" required>
+</label>
+
+<br>
+
 What was the rate of climb approaching the cleared altitude level
-<input type="text"> <br>
+<label class="item item-input">
+  <input type="number" placeholder="What was the rate of climb approaching the cleared altitude level">
+</label>
 
-1000ft level off
-  <input type="radio" name="1000ftLevelOff" value="True" checked> True
 <br>
-  <input type="radio" name="1000ftLevelOff" value="False">
-<br> False <br>
 
-Altitude capture mode armed
-  <input type="radio" name="AltitudeCaptureMode" value="True" checked> True
-<br>
-  <input type="radio" name="AltitudeCaptureMode" value="False">
-<br> False <br>
+<label class="item item-input item-select">
+  1000ft level off
+  <select required>
+  <option disabled selected> select an option </option>
+  <option value="true">True</option>
+  <option value="false">False</option>
+  </select>
+</label>
 
-Altitude captured
-  <input type="radio" name="AltitudeCaptureModeArmed" value="True" checked> True
 <br>
-  <input type="radio" name="AltitudeCaptureModeArmed" value="False">
-<br> False <br>
 
-Altitude selection confirmed by PNF
-  <input type="radio" name="AltitudeCaptureModePNFConfirmed" value="True" checked> True
-<br>
-  <input type="radio" name="AltitudeCaptureModePNFConfirmed" value="False">
-<br> False <br>
+<label class="item item-input item-select">
+  Altitude capture mode armed
+  <select required>
+  <option disabled selected> select an option </option>
+  <option value="true">True</option>
+  <option value="false">False</option>
+  </select>
+</label>
 
-Correct altitude read back by PNF
-  <input type="radio" name="AltitudeCaptureModePNFReadBack" value="True" checked> True
 <br>
-  <input type="radio" name="AltitudeCaptureModePNFReadBack" value="False">
-<br> False <br>
 
-Correct altitute set by PF
-  <input type="radio" name="SetByPF" value="True" checked> True
+<label class="item item-input item-select">
+  Altitude captured
+  <select required>
+  <option disabled selected> select an option </option>
+  <option value="true">True</option>
+  <option value="false">False</option>
+  </select>
+</label>
+
 <br>
-  <input type="radio" name="SetByPF" value="False">
-<br> False <br>
+
+<label class="item item-input item-select">
+  Altitude selection confirmed by PNF
+  <select required>
+  <option disabled selected> select an option </option>
+  <option value="">True</option>
+  <option value="true">True</option>
+  <option value="false">False</option>
+  </select>
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  Correct altitude read back by PNF
+  <select required>
+  <option disabled selected> select an option </option>
+  <option value="true">True</option>
+  <option value="false">False</option>
+  </select>
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  Correct altitute set by PF
+  <select required>
+  <option disabled selected> select an option </option>
+  <option value="true">True</option>
+  <option value="false">False</option>
+  </select>
+</label>

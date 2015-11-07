@@ -54,7 +54,7 @@ safetyapp.directive('altitudedeviation', function() {
     return directive;
 });
 
-safetyapp.directive('crewinformation', function() {
+safetyapp.directive('crewInformation', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -72,7 +72,7 @@ safetyapp.directive('egpws', function() {
     return directive;
 });
 
-safetyapp.directive('eventcategory', function() {
+safetyapp.directive('eventCategory', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -81,7 +81,7 @@ safetyapp.directive('eventcategory', function() {
     return directive;
 });
 
-safetyapp.directive('eventdescription', function() {
+safetyapp.directive('eventDescription', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -90,7 +90,7 @@ safetyapp.directive('eventdescription', function() {
     return directive;
 });
 
-safetyapp.directive('eventid', function() {
+safetyapp.directive('eventId', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -103,12 +103,12 @@ safetyapp.directive('firesparkssmokefumes', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/fireSparkSmokeFumes.html";
+    directive.templateUrl = "../templates/fireSparksSmokeFumes.html";
 
     return directive;
 });
 
-safetyapp.directive('flightdetails', function() {
+safetyapp.directive('flightDetails', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -117,7 +117,7 @@ safetyapp.directive('flightdetails', function() {
     return directive;
 });
 
-safetyapp.directive('flightidentification', function() {
+safetyapp.directive('flightIdentification', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -144,7 +144,7 @@ safetyapp.directive('maintenanceerror', function() {
     return directive;
 });
 
-safetyapp.directive('meterologicalinfo', function() {
+safetyapp.directive('meterologicalInfo', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -153,7 +153,7 @@ safetyapp.directive('meterologicalinfo', function() {
     return directive;
 });
 
-safetyapp.directive('reportinfo', function() {
+safetyapp.directive('reportInfo', function() {
     var directive = {};
 
     directive.restrict = 'E';
@@ -162,7 +162,7 @@ safetyapp.directive('reportinfo', function() {
     return directive;
 });
 
-safetyapp.directive('signup', function() {
+safetyapp.directive('signUp', function() {
     var directive = {};
 
     directive.restrict = 'E';
