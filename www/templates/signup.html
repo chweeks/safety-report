@@ -1,4 +1,4 @@
-<ion-content ng-controller="signUpCtrl">
+<ion-content ng-controller="signUpCtrl as signup">
   <div class="list">
     <label class="item item-input">
       <input type="text" ng-model="name" placeholder="Name" required>
@@ -26,19 +26,19 @@
       </select>
     </label>
     <label class="item item-input">
-      <input type="tel" placeholder="Primary Phone" required>
+      <input type="tel" ng-model="primaryphone" placeholder="Primary Phone" required>
     </label>
     <label class="item item-input">
-      <input type="tel" placeholder="Secondary Phone" required>
+      <input type="tel" ng-model="secondaryphone" placeholder="Secondary Phone" required>
     </label>
     <label class="item item-input">
-      <input type="email" placeholder="Email" required>
+      <input type="email" ng-model="email" placeholder="Email" required>
     </label>
     <label class="item item-input">
-      <input type="text" placeholder="Address" required>
+      <input type="text" ng-model="address" placeholder="Address" required>
     </label>
     <label class="item item-input">
-      <input type="text" placeholder="Rank" required>
+      <input type="text" ng-model="rank" placeholder="Rank" required>
     </label>
     <label class="item item-input item-select">
       <div class="input-label">
@@ -51,17 +51,17 @@
       </select>
     </label>
     <label class="item item-input">
-      <input type="text" placeholder="Crew Member Aircraft Type">
+      <input type="text" ng-model="crewmemtype" placeholder="Crew Member Aircraft Type">
     </label>
     <label class="item item-input">
-      <input type="text" placeholder="Other Employee Name">
+      <input type="text" ng-model="otheremployee" placeholder="Other Employee Name">
     </label>
     <label class="item item-input">
-      <input type="password" placeholder="Password">
+      <input type="password" ng-model="password" placeholder="Password">
     </label>
     <label class="item item-input">
-      <input type="password" placeholder="Password Confirmation">
+      <input type="password" ng-model="passwordconf" placeholder="Password Confirmation">
     </label>
-    <button class="button button-clear button-positive" ng-click="signUpCtrl.postSignUp()">Sign Up</button>
+    <button class="button button-positive" ng-click="signup.postSignUp(email, password, passwordconf, name, address, primaryphone, secondaryphone, rank, crewmemtype, otheremployee)">Sign Up</button>
   </div>
 </ion-content>
