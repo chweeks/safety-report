@@ -1,10 +1,7 @@
-<ion-content>
+<ion-content ng-controller="signUpCtrl">
   <div class="list">
     <label class="item item-input">
-      <input type="text" placeholder="First Name" required>
-    </label>
-    <label class="item item-input">
-      <input type="text" placeholder="Last Name" required>
+      <input type="text" ng-model="name" placeholder="Name" required>
     </label>
     <label class="item item-input">
       <input type="text" placeholder="Job Title" required>
@@ -65,6 +62,6 @@
     <label class="item item-input">
       <input type="password" placeholder="Password Confirmation">
     </label>
-    <input type="submit" name="Submit">
+    <button class="button button-clear button-positive" ng-click="signUpCtrl.postSignUp()">Sign Up</button>
   </div>
 </ion-content>
