@@ -22,7 +22,7 @@ safetyapp.directive('aircraftconfiguration', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/aircraftconfiguration.html";
+    directive.templateUrl = "../templates/aircraftConfiguration.html";
 
     return directive;
 });
@@ -40,7 +40,7 @@ safetyapp.directive('altitudedeviation', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/altitudedeviation.html";
+    directive.templateUrl = "../templates/altitudeDeviation.html";
 
     return directive;
 });
@@ -58,7 +58,7 @@ safetyapp.directive('egpws', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/egpws.html";
+    directive.templateUrl = "../templates/EGPWS.html";
 
     return directive;
 });
@@ -94,7 +94,7 @@ safetyapp.directive('firesparkssmokefumes', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/firesparkssmokefumes.html";
+    directive.templateUrl = "../templates/fireSparkSmokeFumes.html";
 
     return directive;
 });
@@ -121,7 +121,7 @@ safetyapp.directive('laserbeamquestionnaire', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/laserbeamquestionnaire.html";
+    directive.templateUrl = "../templates/laserBeamQuestionnaire.html";
 
     return directive;
 });
@@ -130,7 +130,7 @@ safetyapp.directive('maintenanceerror', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/maintenanceerror.html";
+    directive.templateUrl = "../templates/maintenanceError.html";
 
     return directive;
 });
@@ -166,7 +166,7 @@ safetyapp.directive('systemfailure', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/systemfailure.html";
+    directive.templateUrl = "../templates/systemFailure.html";
 
     return directive;
 });
@@ -175,7 +175,7 @@ safetyapp.directive('waketurbulence', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/waketurbulence.html";
+    directive.templateUrl = "../templates/wakeTurbulence.html";
 
     return directive;
 });
@@ -184,7 +184,7 @@ safetyapp.directive('wildlifestrike', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/wildlifestrike.html";
+    directive.templateUrl = "../templates/wildlifeStrike.html";
 
     return directive;
 });
