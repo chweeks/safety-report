@@ -94,7 +94,7 @@ safetyapp.directive('firesparkssmokefumes', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/fireSparkSmokeFumes.html";
+    directive.templateUrl = "../templates/fireSparksSmokeFumes.html";
 
     return directive;
 });

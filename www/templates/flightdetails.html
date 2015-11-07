@@ -1,141 +1,125 @@
-<ion-content>
-  <label class="item item-input item-select">
-    Were you the pilot flying?
-    <label class="item item-radio">
-      <input type="radio" name="group">
-      <div class="item-content">
-        True
-      </div>
-      <i class="radio-icon ion-checkmark"></i>
-    </label>
-    <label class="item item-radio">
-      <input type="radio" name="group">
-      <div class="item-content">
-        False
-      </div>
-      <i class="radio-icon ion-checkmark"></i>
-    </label>
-    Pilot Flying?
-    <label class="item item-radio">
-      <input type="radio" name="group">
-      <div class="item-content">
-        PIC
-      </div>
-      <i class="radio-icon ion-checkmark"></i>
-    </label>
-    <label class="item item-radio">
-      <input type="radio" name="group">
-      <div class="item-content">
-        SIC
-      </div>
-      <i class="radio-icon ion-checkmark"></i>
-    </label>
-    Pilot Flying Seat?
-    <label class="item item-radio">
-      <input type="radio" name="group">
-      <div class="item-content">
-        Right
-      </div>
-      <i class="radio-icon ion-checkmark"></i>
-    </label>
-    <label class="item item-radio">
-      <input type="radio" name="group">
-      <div class="item-content">
-        Left
-      </div>
-      <i class="radio-icon ion-checkmark"></i>
-    </label>
-    <label class="item item-input">
-      <input type="text" placeholder="Runway Used">
-    </label>
-    <label class="item item-input">
-      <input type="text" placeholder="Aircraft Altitude">
-    </label>
-    <label class="item item-radio">
-      <input type="radio" name="group">
-      <div class="item-content">
-        FL
-      </div>
-      <i class="radio-icon ion-checkmark"></i>
-    </label>
-    <label class="item item-radio">
-      <input type="radio" name="group">
-      <div class="item-content">
-        ft
-      </div>
-      <i class="radio-icon ion-checkmark"></i>
-      <label class="item item-input">
-        <input type="text" placeholder="Airspeed (KIAS)">
-      </label>
-      <label class="item item-input item-select">
-        <div class="input-label">
-          Flight Phase at Start of Event
-        </div>
-        <select>
-          <option>Non-Flight</option>
-          <option>Predeparture / Preflight</option>
-          <option>Engine Start / Pushback</option>
-          <option>Taxi-Out</option>
-          <option>Takeoff</option>
-          <option>Climb</option>
-          <option>Cruise</option>
-          <option>Holding</option>
-          <option>Descent</option>
-          <option>Approach</option>
-          <option>Go Around</option>
-          <option>Landing</option>
-          <option>Landing Flare</option>
-          <option>Rollout Landing</option>
-          <option>Taxi-In</option>
-          <option>Arrival Shutdown</option>
-          <option>Parked</option>
-          <option>Postflight</option>
-          <option>Towing</option>
-        </select>
-      </label>
-      <label class="item item-input">
-        <input type="text" placeholder="A/C Weight">
-      </label>
-      <label class="item item-radio">
-        <input type="radio" name="group">
-        <div class="item-content">
-          Kg
-        </div>
-        <i class="radio-icon ion-checkmark"></i>
-      </label>
-      <label class="item item-radio">
-        <input type="radio" name="group">
-        <div class="item-content">
-          lb
-        </div>
-        <i class="radio-icon ion-checkmark"></i>
-        <label class="item item-input item-select">
-          <div class="input-label">
-            Type of Flight
-          </div>
-          <select>
-            <option>Admin</option>
-            <option>OCF</option>
-            <option>Ferry</option>
-            <option>Training</option>
-            <option>Maintenance</option>
-            <option>Revenue</option>
-            <option>Positioning</option>
-          </select>
-        </label>
-        <label class="item item-input item-select">
-          <div class="input-label">
-            Event Runway Conditions
-          </div>
-          <select>
-            <option>Dry</option>
-            <option>Wet</option>
-            <option>Snow</option>
-            <option>Slush</option>
-            <option>Standing Water</option>
-            <option>Ice</option>
-            <options>Other</options>
-            <option>N/A</option>
-          </select>
-        </label>
-</ion-content>
+<h2> Flight Details</h2>
+
+<label class="item item-input item-select">
+  Were you the pilot flying?
+  <select required>
+  <option value="true">True</option>
+  <option value="false">False</option>
+  </select>
+</label>
+
+<label class="item item-input item-select">
+  Pilot Flying?
+  <select required>
+  <option value="true">PIC</option>
+  <option value="false">SIC</option>
+  </select>
+</label>
+
+<label class="item item-input item-select">
+  Pilot Flying Seat?
+  <select required>
+  <option value="true">Right</option>
+  <option value="false">Left</option>
+  </select>
+</label>
+
+<br>
+
+Runway Used
+<label class="item item-input">
+  <input type="text" placeholder="Runway Used">
+</label>
+
+<br>
+
+Aircraft Altitude
+<label class="item item-input">
+  <input type="text" placeholder="Aircraft Altitude">
+  <select required>
+  <option value="true">ft</option>
+  <option value="false">FL</option>
+  </select>
+</label>
+
+<br>
+
+Airspeed (KIAS)
+<label class="item item-input">
+  <input type="text" placeholder="Airspeed (KIAS)">
+</label>
+
+<br>
+
+Flight Phase at Start of Event
+<label class="item item-input item-select">
+  <div class="input-label">
+  </div>
+  <select>
+    <option>Non-Flight</option>
+    <option>Predeparture / Preflight</option>
+    <option>Engine Start / Pushback</option>
+    <option>Taxi-Out</option>
+    <option>Takeoff</option>
+    <option>Climb</option>
+    <option>Cruise</option>
+    <option>Holding</option>
+    <option>Descent</option>
+    <option>Approach</option>
+    <option>Go Around</option>
+    <option>Landing</option>
+    <option>Landing Flare</option>
+    <option>Rollout Landing</option>
+    <option>Taxi-In</option>
+    <option>Arrival Shutdown</option>
+    <option>Parked</option>
+    <option>Postflight</option>
+    <option>Towing</option>
+  </select>
+</label>
+
+<br>
+
+A/C Weight
+<label class="item item-input">
+  <input type="text" placeholder="A/C Weight">
+  <select required>
+  <option value="true">Kg</option>
+  <option value="false">lb</option>
+  </select>
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  <div class="input-label">
+    Type of Flight
+  </div>
+  <select>
+    <option>Admin</option>
+    <option>OCF</option>
+    <option>Ferry</option>
+    <option>Training</option>
+    <option>Maintenance</option>
+    <option>Revenue</option>
+    <option>Positioning</option>
+  </select>
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  <div class="input-label">
+    Event Runway Conditions
+  </div>
+  <select>
+    <option>Dry</option>
+    <option>Wet</option>
+    <option>Snow</option>
+    <option>Slush</option>
+    <option>Standing Water</option>
+    <option>Ice</option>
+    <options>Other</options>
+    <option>N/A</option>
+  </select>
+</label>

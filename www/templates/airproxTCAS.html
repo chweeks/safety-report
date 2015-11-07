@@ -1,42 +1,67 @@
-<h2> 18 </h2>
+<h2> Airprox / TCAS</h2>
 
-TCAS Alert
-<select>
-<option value="TA">TA</option>
-<option value="RA">RA</option>
-</select> Required <br>
+<label class="item item-input item-select">
+  TCAS Alert
+  <select required>
+  <option value="TA">TA</option>
+  <option value="RA">RA</option>
+  </select>
+</label>
 
-Type of RA
-<select>
-<option value="Traffic">Traffic </option>
-<option value="Climb">Climb</option>
-<option value="Climb, Climb RA">Climb, Climb RA</option>
-<option value="Descend">Descend</option>
-<option value="Descend, Descend RA">Descend, Descend RA</option>
-<option value="Monitor Vertical Speed">Monitor Vertical Speed</option>
-<option value="Level off, Level off">Level off, Level off</option>
-</select> Required <br>
-
-Complied with RA Command
-<input type="radio" name="RACommand" value="True" checked> True
 <br>
-<input type="radio" name="RACommand" value="False"> False
-<br> Required<br>
 
-Loss of separation?
-<input type="radio" name="LossOfSeperation" value="True" checked> True
+<label class="item item-input item-select">
+  Type of RA
+  <select required>
+  <option value="Traffic">Traffic </option>
+  <option value="Climb">Climb</option>
+  <option value="Climb, Climb RA">Climb, Climb RA</option>
+  <option value="Descend">Descend</option>
+  <option value="Descend, Descend RA">Descend, Descend RA</option>
+  <option value="Monitor Vertical Speed">Monitor Vertical Speed</option>
+  <option value="Level off, Level off">Level off, Level off</option>
+  </select>
+</label>
 <br>
-<input type="radio" name="LossOfSeperation" value="False"> False
+
+<label class="item item-input item-select">
+  Complied with RA Command
+  <select required>
+  <option value="true">True</option>
+  <option value="false">False</option>
+  </select>
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  Loss of separation?
+  <select required>
+  <option value="true">True</option>
+  <option value="false">False</option>
+  </select>
+</label>
+
 <br>
 
 Aircraft Vertical Speed (ft/min)
-<input type="text"> Required <br>
+<label class="item item-input">
+  <input type="text" placeholder="Aircraft Vertical Speed (ft/min)" required>
+</label>
+
+<br>
 
 Vertical Deviation (ft)
-<input type="text"> Required <br>
+<label class="item item-input">
+  <input type="text" placeholder="Vertical Deviation (ft)" required>
+</label>
 
-Reported to ATC
-<input type="radio" name="ATC" value="True" checked> True
 <br>
-<input type="radio" name="ATC" value="False"> False
-<br> Required<br>
+
+<label class="item item-input item-select">
+  Reported to ATC
+  <select required>
+  <option value="true">True</option>
+  <option value="false">False</option>
+  </select>
+</label>
