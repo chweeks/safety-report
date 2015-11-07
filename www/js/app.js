@@ -45,11 +45,11 @@ safetyapp.directive('altitudeDeviation', function() {
     return directive;
 });
 
-safetyapp.directive('crewinformation', function() {
+safetyapp.directive('crewInformation', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/crewinformation.html";
+    directive.templateUrl = "../templates/crewInformation.html";
 
     return directive;
 });
@@ -63,29 +63,29 @@ safetyapp.directive('egpws', function() {
     return directive;
 });
 
-safetyapp.directive('eventcategory', function() {
+safetyapp.directive('eventCategory', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/eventcategory.html";
+    directive.templateUrl = "../templates/eventCategory.html";
 
     return directive;
 });
 
-safetyapp.directive('eventdescription', function() {
+safetyapp.directive('eventDescription', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/eventdescription.html";
+    directive.templateUrl = "../templates/eventDescription.html";
 
     return directive;
 });
 
-safetyapp.directive('eventid', function() {
+safetyapp.directive('eventId', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/eventid.html";
+    directive.templateUrl = "../templates/eventId.html";
 
     return directive;
 });
@@ -99,20 +99,20 @@ safetyapp.directive('fireSparksSmokeFumes', function() {
     return directive;
 });
 
-safetyapp.directive('flightdetails', function() {
+safetyapp.directive('flightDetails', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/flightdetails.html";
+    directive.templateUrl = "../templates/flightDetails.html";
 
     return directive;
 });
 
-safetyapp.directive('flightidentification', function() {
+safetyapp.directive('flightIdentification', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/flightidentification.html";
+    directive.templateUrl = "../templates/flightIdentification.html";
 
     return directive;
 });
@@ -135,29 +135,29 @@ safetyapp.directive('maintenanceError', function() {
     return directive;
 });
 
-safetyapp.directive('meterologicalinfo', function() {
+safetyapp.directive('meterologicalInfo', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/meterologicalinfo.html";
+    directive.templateUrl = "../templates/meterologicalInfo.html";
 
     return directive;
 });
 
-safetyapp.directive('reportinfo', function() {
+safetyapp.directive('reportInfo', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/reportinfo.html";
+    directive.templateUrl = "../templates/reportInfo.html";
 
     return directive;
 });
 
-safetyapp.directive('signup', function() {
+safetyapp.directive('signUp', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/signup.html";
+    directive.templateUrl = "../templates/signUp.html";
 
     return directive;
 });
