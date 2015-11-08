@@ -132,7 +132,7 @@ safetyapp.controller('formPostCtrl', ['$http', '$cookies', function($http, $cook
                     'Suspected_ac_visibile': suspected_ac_visibile,
                     'Suspected_aircraft_type': suspected_aircraft_type,
                     'Suspected_aircraft_Callsign': suspected_aircraft_callsign,
-                    'Estimated_Separation_NM': estimated_Separation_nm,
+                    'Estimated_Separation_NM': estimated_separation_nm,
                     'Stickshaker': stickshaker,
                     'Type_of_Animal': type_of_animal,
                     'Number_of_Animals_Seen': number_of_animals_seen,
