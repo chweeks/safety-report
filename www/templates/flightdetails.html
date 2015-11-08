@@ -2,7 +2,7 @@
 
 <label class="item item-input item-select">
   Were you the pilot flying?
-  <select required>
+  <select ng-model="were_you_the_pilot_flying" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -12,7 +12,7 @@
 <label class="item item-input item-select">
   Pilot Flying?
   <option disabled selected> select an option </option>
-  <select required>
+  <select ng-model="pilot_flying" required>
   <option value="true">PIC</option>
   <option value="false">SIC</option>
   </select>
@@ -20,7 +20,7 @@
 
 <label class="item item-input item-select">
   Pilot Flying Seat?
-  <select required>
+  <select ng-model="pilot_flying_seat" required>
   <option disabled selected> select an option </option>
   <option value="true">Right</option>
   <option value="false">Left</option>
@@ -31,7 +31,7 @@
 
 Runway Used
 <label class="item item-input">
-  <input type="text" placeholder="Runway Used">
+  <input type="text" placeholder="Runway Used" ng-model="runway_used">
 </label>
 
 <br>
@@ -39,7 +39,7 @@ Runway Used
 Aircraft Altitude
 <label class="item item-input">
   <input type="number" placeholder="Aircraft Altitude">
-  <select required>
+  <select ng-model="aircraft_altitude" required>
   <option disabled selected> select an option </option>
   <option value="true">ft</option>
   <option value="false">FL</option>
@@ -50,7 +50,7 @@ Aircraft Altitude
 
 Airspeed (KIAS)
 <label class="item item-input">
-  <input type="number" placeholder="Airspeed (KIAS)">
+  <input type="number" placeholder="Airspeed (KIAS)" ng-model="airspeed_kias">
 </label>
 
 <br>
@@ -59,7 +59,7 @@ Flight Phase at Start of Event
 <label class="item item-input item-select">
   <div class="input-label">
   </div>
-  <select>
+  <select ng-model="flight_phase_at_start_of_event">
     <option disabled selected> select an option </option>
     <option>Non-Flight</option>
     <option>Predeparture / Preflight</option>
@@ -88,7 +88,7 @@ Flight Phase at Start of Event
 A/C Weight
 <label class="item item-input">
   <input type="text" placeholder="A/C Weight">
-  <select required>
+  <select ng-model="ac_weight" required>
   <option disabled selected> select an option </option>
   <option value="true">Kg</option>
   <option value="false">lb</option>
@@ -101,7 +101,7 @@ A/C Weight
   <div class="input-label">
     Type of Flight
   </div>
-  <select>
+  <select ng-model="type_of_flight">
     <option disabled selected> select an option </option>
     <option>Admin</option>
     <option>OCF</option>
@@ -119,7 +119,7 @@ A/C Weight
   <div class="input-label">
     Event Runway Conditions
   </div>
-  <select>
+  <select ng-model="event_runway_conditions">
     <option disabled selected> select an option </option>
     <option>Dry</option>
     <option>Wet</option>

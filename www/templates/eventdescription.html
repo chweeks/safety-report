@@ -2,21 +2,21 @@
 
 Event Title
 <label class="item item-input">
-  <input type="text" placeholder="Event Title">
+  <input type="text" placeholder="Event Title" ng-model="event_title">
 </label>
 
 <br>
 
 Description of Issue / Event
 <label class="item item-input">
-  <input type="text" placeholder="Description of Issue / Event" required>
+  <input type="text" placeholder="Description of Issue / Event" ngn-model="description_of_issueevent" required>
 </label>
 
 <br>
 
 Other information and suggestions from the reporter
 <label class="item item-input">
-  <input type="text" placeholder="Other information and suggestions from the reporter">
+  <input type="text" placeholder="Other information and suggestions from the reporter" ng-model="other_information_and_suggestions_from_the_reporter">
 </label>
 
 <br>
@@ -25,7 +25,7 @@ Other information and suggestions from the reporter
   <div class="input-label">
     Any Operational Impact
   </div>
-  <select>
+  <select ng-model="any_operational_impact">
     <option disabled selected> select an option </option>
     <option>Removed from duty</option>
     <option>Schedule changed</option>

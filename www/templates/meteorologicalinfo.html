@@ -1,13 +1,13 @@
 <ion-content>
   <div class="list">
     <label class="item item-input">
-      <input type="text" placeholder="Temperature">
+      <input type="text" placeholder="Temperature" ng-model="temperature_c">
     </label>
     <label class="item item-input item-select">
       <div class="input-label">
         Meteorolical Conditions
       </div>
-      <select>
+      <select ng-model="meteorological_conditions">
         <option disabled selected> select an option </option>
         <option>CAT I</option>
         <option>Cat II/III</option>
@@ -18,22 +18,22 @@
       </select>
     </label>
     <label class="item item-input">
-      <input type="text" placeholder="Visibility">
+      <input type="text" placeholder="Visibility" ng-model="visibility">
     </label>
     <label class="item item-input">
-      <input type="text" placeholder="Wind Direction">
+      <input type="text" placeholder="Wind Direction" ng-model="wind_direction">
     </label>
     <label class="item item-input">
-      <input type="text" placeholder="Wind Velocity">
+      <input type="text" placeholder="Wind Velocity" ng-model="wind_velocity">
     </label>
     <label class="item item-input">
-      <input type="text" placeholder="QNH">
+      <input type="text" placeholder="QNH" ng-model="qnh">
     </label>
     <label class="item item-input item-select">
       <div class="input-label">
         Icing
       </div>
-      <select>
+      <select ng-model="icing">
         <option disabled selected> select an option </option>
         <option>Light</option>
         <option>Moderate</option>
@@ -44,7 +44,7 @@
       <div class="input-label">
         Turbulence
       </div>
-      <select>
+      <select ng-model="turbulence">
         <option disabled selected> select an option </option>
         <option>Light</option>
         <option>Moderate</option>
@@ -54,14 +54,14 @@
 
     Rain?
     <label class="item item-radio">
-      <input type="radio" name="group">
+      <input type="radio" name="group" ng-model="rain">
       <div class="item-content">
         True
       </div>
       <i class="radio-icon ion-checkmark"></i>
     </label>
     <label class="item item-radio">
-      <input type="radio" name="group">
+      <input type="radio" name="group" ng-model="rain">
       <div class="item-content">
         False
       </div>
@@ -69,14 +69,14 @@
 
     Thunderstorms?
     <label class="item item-radio">
-      <input type="radio" name="group">
+      <input type="radio" name="group" ng-model="thunderstorms">
       <div class="item-content">
         True
       </div>
       <i class="radio-icon ion-checkmark"></i>
     </label>
     <label class="item item-radio">
-      <input type="radio" name="group">
+      <input type="radio" name="group" ng-model="thunderstorms">
       <div class="item-content">
         False
       </div>
@@ -84,14 +84,14 @@
 
     Visibility?
     <label class="item item-radio">
-      <input type="radio" name="group">
+      <input type="radio" name="group" ng-model="msm_visibility">
       <div class="item-content">
         m
       </div>
       <i class="radio-icon ion-checkmark"></i>
     </label>
     <label class="item item-radio">
-      <input type="radio" name="group">
+      <input type="radio" name="group" ng-model="msm_visibility">
       <div class="item-content">
         SM
       </div>
@@ -99,14 +99,14 @@
 
     Meteorological Conditions
     <label class="item item-radio">
-      <input type="radio" name="group">
+      <input type="radio" name="group" ng-model="meteorological_conditions_iv">
       <div class="item-content">
         VMC
       </div>
       <i class="radio-icon ion-checkmark"></i>
     </label>
     <label class="item item-radio">
-      <input type="radio" name="group">
+      <input type="radio" name="group" ng-model="meteorological_conditions_iv">
       <div class="item-content">
         IMC
       </div>
