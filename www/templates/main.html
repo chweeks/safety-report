@@ -1,4 +1,5 @@
 <div style = "margin-top:45px" ng-controller="formPostCtrl">
+  <div ng-controller="DynamicLoadingCtrl as DLCtrl">
     <reportinfo></reportinfo>
     <eventid></eventid>
     <eventcategory></eventcategory>
@@ -8,16 +9,16 @@
     <flightdetails></flightdetails>
     <meteorologicalinfo></meteorologicalinfo>
 
-    <laserbeamquestionnaire></laserbeamquestionnaire>
-    <aircraftconfiguration></aircraftconfiguration>
-    <airproxtcas></airproxtcas>
-    <altitudedeviation></altitudedeviation>
-    <egpws></egpws>
-    <maintenanceerror></maintenanceerror>
-    <systemfailure></systemfailure>
-    <waketurbulence></waketurbulence>
-    <wildlifestrike></wildlifestrike>
-    <firesparkssmokefumes></firesparkssmokefumes>
-
-    <button class="button button-block button-balanced" ng-click="formPostCtrl.postFormData()">Submit</button>
+    <laserbeamquestionnaire ng-show="DLCtrl.laserbeamquestionnaire()"></laserbeamquestionnaire>
+    <aircraftconfiguration ng-show="DLCtrl.aircraftconfiguration()"></aircraftconfiguration>
+    <airproxtcas ng-show="DLCtrl.airproxtcas()"></airproxtcas>
+    <altitudedeviation ng-show="DLCtrl.altitudedeviation()"></altitudedeviation>
+    <egpws ng-show="DLCtrl.egpws()"></egpws>
+    <maintenanceerror ng-show="DLCtrl.maintenanceerror()"></maintenanceerror>
+    <systemfailure ng-show="DLCtrl.systemfailure()"></systemfailure>
+    <waketurbulence ng-show="DLCtrl.waketurbulence()"></waketurbulence>
+    <wildlifestrike ng-show="DLCtrl.wildlifestrike()"></wildlifestrike>
+    <firesparkssmokefumes ng-show="DLCtrl.firesparkssmokefumes()"></firesparkssmokefumes>
+  </div>
+  <button class="button button-block button-balanced" ng-click="formPostCtrl.postFormData()">Submit</button>
 </div>
