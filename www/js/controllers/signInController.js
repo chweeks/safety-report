@@ -2,7 +2,6 @@ safetyapp.controller('signInCtrl', ['$http', '$cookies','$state', function($http
   var self = this;
 
   self.postSignIn = function(email, password) {
-    console.log("The boys")
     var postData = { 'email': email, 'password': password };
       $http.post('https://immense-castle-3453.herokuapp.com/sessions', postData, 'POST').success(function(data) {
         $cookies.put("auth_key", data.auth_key);
