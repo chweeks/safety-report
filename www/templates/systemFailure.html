@@ -2,7 +2,7 @@
 
 <label class="item item-select">
 Applicable checklist performed?
-<select>
+<select ng-model="applicable_checklist_performed">
   <option disabled selected> select an option </option>
   <option type="radio" name="checklistPerformed" value="True" checked> True
   <option type="radio" name="checklistPerformed" value="False"> False
@@ -12,7 +12,7 @@ Applicable checklist performed?
 
 <label class="item item-select">
 Defect entry made in Techlog?
-<select>
+<select ng-model="defect_entry_made_in_techlog">
   <option disabled selected> select an option </option>
   <option type="radio" name="techlogTrue" value="True" checked> True </option>
   <option type="radio" name="techlogTrue" value="False"> False </option>

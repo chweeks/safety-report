@@ -4,7 +4,7 @@
   <div class="input-label">
     Location
   </div>
-  <select>
+  <select ng-model="location_aiport">
     <option disabled selected> select an option </option>
     <option>Airport option 1</option>
     <option>Airport option 2</option>
@@ -16,26 +16,26 @@
 
 Time the Event Occured
 <label class="item item-input">
-  <input type="time" placeholder="Time the Event Occured" required>
+  <input type="time" placeholder="Time the Event Occured" ng-model="time_the_event_occured" required>
 </label>
 
 <br>
 
 Date Event Occured
 <label class="item item-input">
-  <input type="date" placeholder="Date Event Occured" required>
+  <input type="date" placeholder="Date Event Occured" ng-model="date_the_event_occured" required>
 </label>
 
 <br>
 
 Location Of Event (other than airport)
 <label class="item item-input">
-  <input type="text" placeholder="Location Of Event (other than airport)">
+  <input type="text" placeholder="Location Of Event (other than airport)" ng-model="location_of_the_event_other_than_airport">
 </label>
 
 <br>
 
 Location Country
 <label class="item item-input">
-  <input type="text" placeholder="Location Country">
+  <input type="text" placeholder="Location Country" ng-model="location_country">
 </label>

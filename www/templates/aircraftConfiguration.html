@@ -2,7 +2,7 @@
 
 <label class="item item-input item-select">
   Autopilot
-  <select required>
+  <select required ng-model="autopilot">
     <option disabled selected> select an option </option>
     <option value="Engaged">Engaged</option>
     <option value="Not Engaged">Not Engaged</option>
@@ -15,7 +15,7 @@
 
 <label class="item item-input item-select">
   Autothrottle
-  <select required>
+  <select required ng-model="autothrottle">
     <option disabled selected> select an option </option>
     <option value="On">On</option>
     <option value="Off">Off</option>
@@ -27,14 +27,14 @@
 
 Flaps
 <label class="item item-input">
-  <input type="text" placeholder="Flaps">
+  <input type="text" placeholder="Flaps" ng-model="flaps">
 </label>
 
 <br>
 
 <label class="item item-input item-select">
   Speedbrake
-  <select required>
+  <select required ng-model="speedbrake">
     <option disabled selected> select an option </option>
     <option value="In">In</option>
     <option value="Out">Out</option>
@@ -46,7 +46,7 @@ Flaps
 
 <label class="item item-input item-select">
   Spoilers
-  <select required>
+  <select required ng-model="spoilers">
     <option disabled selected> select an option </option>
     <option value="In">In</option>
     <option value="Out">Out</option>
@@ -58,7 +58,7 @@ Flaps
 
 <label class="item item-input item-select">
   Gear
-  <select required>
+  <select required ng-model="gear">
     <option disabled selected> select an option </option>
     <option value="Up">Up</option>
     <option value="Down">Down</option>

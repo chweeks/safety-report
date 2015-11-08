@@ -2,7 +2,7 @@
 
 <label class="item item-input item-select">
   TCAS Alert
-  <select required>
+  <select ng-model="tcas_alert" required>
   <option disabled selected> select an option </option>
   <option value="TA">TA</option>
   <option value="RA">RA</option>
@@ -13,7 +13,7 @@
 
 <label class="item item-input item-select">
   Type of RA
-  <select required>
+  <select ng-model="type_of_ra" required>
   <option disabled selected> select an option </option>
   <option value="Traffic">Traffic </option>
   <option value="Climb">Climb</option>
@@ -28,7 +28,7 @@
 
 <label class="item item-input item-select">
   Complied with RA Command
-  <select required>
+  <select ng-model="complied_with_ra_command" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -39,7 +39,7 @@
 
 <label class="item item-input item-select">
   Loss of separation?
-  <select required>
+  <select required ng-model="loss_of_separation">
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -50,21 +50,21 @@
 
 Aircraft Vertical Speed (ft/min)
 <label class="item item-input">
-  <input type="number" placeholder="Aircraft Vertical Speed (ft/min)" required>
+  <input type="number" placeholder="Aircraft Vertical Speed (ft/min)" ng-model="aircraft_vertical_speed" required>
 </label>
 
 <br>
 
 Vertical Deviation (ft)
 <label class="item item-input">
-  <input type="number" placeholder="Vertical Deviation (ft)" required>
+  <input type="number" placeholder="Vertical Deviation (ft)" ng-model="vertical_deviation" required>
 </label>
 
 <br>
 
 <label class="item item-input item-select">
   Reported to ATC
-  <select required>
+  <select required ng-model="reported_to_atc">
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
