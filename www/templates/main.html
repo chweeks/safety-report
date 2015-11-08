@@ -1,23 +1,23 @@
-<div ng-controller="formPostCtrl">
-  <reportinfo></reportinfo>
-  <eventid></eventid>
-  <eventcategory></eventcategory>
-  <eventdescription></eventdescription>
-  <crewinformation></crewinformation>
-  <flightidentification></flightidentification>
-  <flightdetails></flightdetails>
-  <meteorologicalinfo></meteorologicalinfo>
+<div style = "margin-top:45px" ng-controller="formPostCtrl">
+    <reportinfo></reportinfo>
+    <eventid></eventid>
+    <eventcategory></eventcategory>
+    <eventdescription></eventdescription>
+    <crewinformation></crewinformation>
+    <flightidentification></flightidentification>
+    <flightdetails></flightdetails>
+    <meteorologicalinfo></meteorologicalinfo>
 
-  <laserbeamquestionnaire ng-show="eventCategory == 'Laser Beam exposure'"></laserbeamquestionnaire>
-  <aircraftconfiguration ng-show="eventCategory == 'Aircraft Limit Exceedance' || 'Airprox / TCAS' || 'Altitude Deviation' || 'ATC Incident' || 'Automation' || 'Configuration Warnings' || 'EGPWS' || 'Inadequate Terrain Clearance' || 'Laser Beam exposure' || 'Navigation Error' || 'Speed Deviation' || 'Stick Shaker / Stall Warning' || 'Unstable Approach' || 'Wake Turbulence'"></aircraftconfiguration>
-  <airproxtcas ng-show="eventCategory == 'Airprox / TCAS'"></airproxtcas>
-  <altitudedeviation ng-show="eventCategory == 'Altitude Deviation'"></altitudedeviation>
-  <egpws ng-show="eventCategory == 'EGPWS'"></egpws>
-  <maintenanceerror ng-show="eventCategory == 'Maintenance Error'"></maintenanceerror>
-  <systemfailure ng-show="eventCategory == 'System Failure'"></systemfailure>
-  <waketurbulence ng-show="eventCategory == 'Wake Turbulence'"></waketurbulence>
-  <wildlifestrike ng-show="eventCategory == 'Wildlife Strike'"></wildlifestrike>
-  <firesparkssmokefumes ng-show="eventCategory == 'Fire / Sparks / Smoke / Fumes'"></firesparkssmokefumes>
+    <laserbeamquestionnaire></laserbeamquestionnaire>
+    <aircraftconfiguration></aircraftconfiguration>
+    <airproxtcas></airproxtcas>
+    <altitudedeviation></altitudedeviation>
+    <egpws></egpws>
+    <maintenanceerror></maintenanceerror>
+    <systemfailure></systemfailure>
+    <waketurbulence></waketurbulence>
+    <wildlifestrike></wildlifestrike>
+    <firesparkssmokefumes></firesparkssmokefumes>
 
-  <button class="button button-block button-balanced" ng-click="formPostCtrl.postFormData()">Submit</button>
+    <button class="button button-block button-balanced" ng-click="formPostCtrl.postFormData()">Submit</button>
 </div>
