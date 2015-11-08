@@ -155,16 +155,16 @@ safetyapp.directive('maintenanceerror', function() {
     return directive;
 });
 
-safetyapp.directive('meterologicalInfo', function() {
+safetyapp.directive('meteorologicalinfo', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/meterologicalInfo.html";
+    directive.templateUrl = "../templates/meteorologicalInfo.html";
 
     return directive;
 });
 
-safetyapp.directive('reportInfo', function() {
+safetyapp.directive('reportinfo', function() {
     var directive = {};
 
     directive.restrict = 'E';
