@@ -1,7 +1,7 @@
 <h4 class='centre'> Wake Turbulence </h4>
 
 <label class="item item-select">
-Position on Glidepath
+<strong>Position on Glidepath</strong>
   <select ng-model="position_on_glidepath">
     <option disabled selected> select an option </option>
     <option value="True">High</option>
@@ -9,68 +9,84 @@ Position on Glidepath
     <option value="On">On</option>
   </select required>
 </label>
-<label class=""
-Heading
-<input type="text"> <br>
 
-
-Altitude Change
-<label class="item item-input">
-  <input type="text" ng-model="altitude_change"> <br>
-</label>
 <br>
 
-Change of attitude - Pitch
+<strong>Heading<strong>
 <label class="item item-input">
-  <input type="text" ng-model="change_of_attitude_pitch"> <br>
+  <input type="text" ng-model="altitude_change" placeholder="Heading">
 </label>
+
 <br>
 
-Change of attitude - Roll
+<strong>Altitude Change<strong>
 <label class="item item-input">
-  <input type="text" ng-model="change_of_attitude_roll"> <br>
+  <input type="text" ng-model="altitude_change" placeholder="Altitude Change">
 </label>
+
 <br>
 
-Change of attitude - Yaw
+<strong>Change of attitude - Pitch</strong>
 <label class="item item-input">
-  <input type="text" ng-model="change_of_attitude_yaw"> <br>
+  <input type="text" ng-model="change_of_attitude_pitch" placeholder="Change of attitude - Pitch">
 </label>
+
+<br>
+
+<strong>Change of attitude - Roll</strong>
+<label class="item item-input">
+  <input type="text" ng-model="change_of_attitude_roll" placeholder="Change of attitude - Roll">
+</label>
+
+<br>
+
+<strong>Change of attitude - Yaw</strong>
+<label class="item item-input">
+  <input type="text" ng-model="change_of_attitude_yaw" placeholder="Change of attitude - Yaw">
+</label>
+
 <br>
 
 <label class="item item-select">
-Suspected a/c visibile?
+<strong>Suspected a/c visibile?</strong>
   <select ng-model="suspected_ac_visibile">
     <option disabled selected> select an option </option>
     <option value="True">True</option>
     <option value="False">False</option>
     <option value="On">On</option>
-  </select> <br>
+  </select>
 </label>
+
 <br>
 
-Suspected aircraft type
+<strong>Suspected aircraft type</strong>
 <label class="item item-input">
-  <input type="text" ng-model="suspected_aircraft_type"> <br>
+  <input type="text" ng-model="suspected_aircraft_type" placeholder="Suspected aircraft type">
 </label>
+
 <br>
 
-Suspected aircraft Callsign
+<strong>Suspected aircraft Callsign</strong>
 <label class="item item-input">
-  <input type="text" ng-model="suspected_aircraft_callsign"> <br>
+  <input type="text" ng-model="suspected_aircraft_callsign" placeholder="Suspected aircraft Callsign">
 </label>
 
-Estimated Separation (NM)
+<br>
+
+<strong>Estimated Separation (NM)</strong>
 <label class="item item-input">
-  <input type="text" ng-model="estimated_separation_nm">
+  <input type="text" ng-model="estimated_separation_nm" placeholder="Estimated Separation (NM)">
 </label>
+
 <br>
 
 <label class="item item-select">
-Stickshaker
+<strong>Stickshaker</strong>
 <select ng-model="stickshaker">
   <option disabled selected> select an option </option>
   <option type="radio" name="Stickshaker" value="True" checked> True</option>
   <option type="radio" name="Stickshaker" value="False"> False </option>
 </select>
 </label>
+
+<br>

@@ -1,7 +1,7 @@
 <ion-content>
   <div style = "margin-top:5%" ng-controller="formPostCtrl">
     <div ng-controller="DynamicLoadingCtrl as DLCtrl">
-      <!-- <reportinfo></reportinfo>
+      <reportinfo></reportinfo>
       <eventid></eventid>
       <eventcategory></eventcategory>
       <eventdescription></eventdescription>
@@ -9,9 +9,8 @@
       <flightidentification></flightidentification>
       <flightdetails></flightdetails>
       <meteorologicalinfo></meteorologicalinfo>
-      ng-show="DLCtrl.laserbeamquestionnaire(event_category)" -->
 
-      <laserbeamquestionnaire ></laserbeamquestionnaire>
+      <laserbeamquestionnaire ng-show="DLCtrl.laserbeamquestionnaire(event_category)"></laserbeamquestionnaire>
       <aircraftconfiguration ng-show="DLCtrl.aircraftconfiguration(event_category)"></aircraftconfiguration>
       <airproxtcas ng-show="DLCtrl.airproxtcas(event_category)"></airproxtcas>
       <altitudedeviation ng-show="DLCtrl.altitudedeviation(event_category)"></altitudedeviation>

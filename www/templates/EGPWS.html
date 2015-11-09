@@ -1,7 +1,7 @@
 <h4 class='centre'> EGPWS </h4>
 
 <label class="item item-input item-select">
-  Type of warning
+  <strong>Type of warning</strong>
   <select ng-model="type_of_warning" required>
     <option disabled selected> select an option </option>
     <option value="Pull up">Pull up</option>
@@ -23,7 +23,7 @@
 <br>
 
 <label class="item item-input item-select">
-  Did you follow the EGPWS procedure?
+  <strong>Did you follow the EGPWS procedure?</strong>
   <select ng-model="did_you_follow_the_egpws_procedure" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
@@ -33,14 +33,16 @@
 
 <br>
 
-Vertical Speed (ft/min)
+<strong>Vertical Speed (ft/min)</strong>
 <label class="item item-input">
   <input type="number" placeholder="Vertical Speed (ft/min)" ng-model="vertical_speed">
 </label>
 
 <br>
 
-Radio Altimeter (ft)
+<strong>Radio Altimeter (ft)</strong>
 <label class="item item-input">
   <input type="number" placeholder="Radio Altimeter (ft)" ng-model="radio_altimeter">
 </label>
+
+<br>
