@@ -1,115 +1,137 @@
 <h4 class='centre'>Meterorological Information</h4>
 
-<div class="list">
-  <label class="item item-input">
-    <input type="text" placeholder="Temperature" ng-model="temperature_c">
-  </label>
-  <label class="item item-input item-select">
-    <div class="input-label">
-      Meteorolical Conditions
-    </div>
-    <select ng-model="meteorological_conditions">
-      <option disabled selected> select an option </option>
-      <option>CAT I</option>
-      <option>Cat II/III</option>
-      <option>INC</option>
-      <option>VMC</option>
-      <option>Marginal</option>
-      <option>Below Mins</option>
-    </select>
-  </label>
-  <label class="item item-input">
-    <input type="text" placeholder="Visibility" ng-model="visibility">
-  </label>
-  <label class="item item-input">
-    <input type="text" placeholder="Wind Direction" ng-model="wind_direction">
-  </label>
-  <label class="item item-input">
-    <input type="text" placeholder="Wind Velocity" ng-model="wind_velocity">
-  </label>
-  <label class="item item-input">
-    <input type="text" placeholder="QNH" ng-model="qnh">
-  </label>
-  <label class="item item-input item-select">
-    <div class="input-label">
-      Icing
-    </div>
-    <select ng-model="icing">
-      <option disabled selected> select an option </option>
-      <option>Light</option>
-      <option>Moderate</option>
-      <option>Severe</option>
-    </select>
-  </label>
-  <label class="item item-input item-select">
-    <div class="input-label">
-      Turbulence
-    </div>
-    <select ng-model="turbulence">
-      <option disabled selected> select an option </option>
-      <option>Light</option>
-      <option>Moderate</option>
-      <option>Severe</option>
-    </select>
-  </label>
+<strong>Temperature</strong>
+<label class="item item-input">
+  <input type="text" placeholder="Temperature" ng-model="temperature_c">
+</label>
 
-  Rain?
-  <label class="item item-radio">
-    <input type="radio" name="group" ng-model="rain">
-    <div class="item-content">
-      True
-    </div>
-    <i class="radio-icon ion-checkmark"></i>
-  </label>
-  <label class="item item-radio">
-    <input type="radio" name="group" ng-model="rain">
-    <div class="item-content">
-      False
-    </div>
-    <i class="radio-icon ion-checkmark"></i>
+<br>
 
-  Thunderstorms?
-  <label class="item item-radio">
-    <input type="radio" name="group" ng-model="thunderstorms">
-    <div class="item-content">
-      True
-    </div>
-    <i class="radio-icon ion-checkmark"></i>
-  </label>
-  <label class="item item-radio">
-    <input type="radio" name="group" ng-model="thunderstorms">
-    <div class="item-content">
-      False
-    </div>
-    <i class="radio-icon ion-checkmark"></i>
-
-  Visibility?
-  <label class="item item-radio">
-    <input type="radio" name="group" ng-model="msm_visibility">
-    <div class="item-content">
-      m
-    </div>
-    <i class="radio-icon ion-checkmark"></i>
-  </label>
-  <label class="item item-radio">
-    <input type="radio" name="group" ng-model="msm_visibility">
-    <div class="item-content">
-      SM
-    </div>
-    <i class="radio-icon ion-checkmark"></i>
-
-  Meteorological Conditions
-  <label class="item item-radio">
-    <input type="radio" name="group" ng-model="meteorological_conditions_iv">
-    <div class="item-content">
-      VMC
-    </div>
-    <i class="radio-icon ion-checkmark"></i>
-  </label>
-  <label class="item item-radio">
-    <input type="radio" name="group" ng-model="meteorological_conditions_iv">
-    <div class="item-content">
-      IMC
-    </div>
-    <i class="radio-icon ion-checkmark"></i>
+<label class="item item-input item-select">
+  <div class="input-label">
+    <strong>Meteorolical Conditions</strong>
   </div>
+  <select ng-model="meteorological_conditions">
+    <option disabled selected> select an option </option>
+    <option>CAT I</option>
+    <option>Cat II/III</option>
+    <option>INC</option>
+    <option>VMC</option>
+    <option>Marginal</option>
+    <option>Below Mins</option>
+  </select>
+</label>
+
+<br>
+
+<strong>Visibility</strong>
+<label class="item item-input">
+  <input type="text" placeholder="Visibility" ng-model="visibility">
+</label>
+
+<br>
+
+<strong>Wind Direction</strong>
+<label class="item item-input">
+  <input type="text" placeholder="Wind Direction" ng-model="wind_direction">
+</label>
+
+<br>
+
+<strong>Wind Velocity</strong>
+<label class="item item-input">
+  <input type="text" placeholder="Wind Velocity" ng-model="wind_velocity">
+</label>
+
+<br>
+
+<strong>QNH</strong>
+<label class="item item-input">
+  <input type="text" placeholder="QNH" ng-model="qnh">
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  <div class="input-label">
+    <strong>Icing</strong>
+  </div>
+  <select ng-model="icing">
+    <option disabled selected> select an option </option>
+    <option>Light</option>
+    <option>Moderate</option>
+    <option>Severe</option>
+  </select>
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  <div class="input-label">
+    <strong>Turbulence</strong>
+  </div>
+  <select ng-model="turbulence">
+    <option disabled selected> select an option </option>
+    <option>Light</option>
+    <option>Moderate</option>
+    <option>Severe</option>
+  </select>
+</label>
+
+<br>
+
+<strong>Rain?<strong>
+<label class="item item-radio">
+  <ion-radio name="group1" ng-model="rain">
+    True
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+<label class="item item-radio">
+  <ion-radio name="group1" ng-model="rain">
+    False
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+
+<br>
+
+<strong>Thunderstorms?</strong>
+<label class="item item-radio">
+  <ion-radio name="group2" ng-model="thunderstorms">
+    True
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+<label class="item item-radio">
+  <ion-radio name="group2" ng-model="thunderstorms">
+    False
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+
+<br>
+
+<strong>Visibility?</strong>
+<label class="item item-radio">
+  <ion-radio name="group3" ng-model="msm_visibility">
+    m
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+<label class="item item-radio">
+  <ion-radio name="group3" ng-model="msm_visibility">
+    SM
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+
+<br>
+
+<strong>Meteorological Conditions</strong>
+<label class="item item-radio">
+  <ion-radio name="group4" ng-model="meteorological_conditions_iv">
+    VMC
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+<label class="item item-radio">
+  <ion-radio name="group4" ng-model="meteorological_conditions_iv">
+    IMC
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+
+<br>
