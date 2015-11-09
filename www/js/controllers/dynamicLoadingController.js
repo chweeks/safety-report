@@ -33,7 +33,7 @@ safetyapp.controller('DynamicLoadingCtrl', [ function() {
   };
 
   self.altitudedeviation = function(eventCategory) {
-    if (eventCategory == 'Altitude Deviation') {
+    if (eventCategory == 'Altitude Deviation') {      
       return true
     }
   };
@@ -57,7 +57,7 @@ safetyapp.controller('DynamicLoadingCtrl', [ function() {
   };
 
   self.firesparkssmokefumes = function(eventCategory) {
-    if (eventCategory == 'Fire/Sparks/Smoke/Fumes') {
+    if (eventCategory == 'Fire / Sparks / Smoke / Fumes') {
       return true
     }
   };
@@ -75,7 +75,7 @@ safetyapp.controller('DynamicLoadingCtrl', [ function() {
   };
 
   self.maintenanceerror = function(eventCategory) {
-    if (eventCategory == 'maintenanceerror') {
+    if (eventCategory == 'Maintenance Error') {
       return true
     }
   };

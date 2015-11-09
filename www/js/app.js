@@ -42,7 +42,7 @@ safetyapp.directive('aircraftconfiguration', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/aircraftConfiguration.html";
+    directive.templateUrl = "templates/aircraftConfiguration.html";
 
     return directive;
 });
@@ -51,7 +51,7 @@ safetyapp.directive('airproxtcas', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/airproxtcas.html";
+    directive.templateUrl = "templates/airproxtcas.html";
 
     return directive;
 });
@@ -60,7 +60,7 @@ safetyapp.directive('altitudedeviation', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/altitudeDeviation.html";
+    directive.templateUrl = "templates/altitudeDeviation.html";
 
     return directive;
 });
@@ -69,7 +69,7 @@ safetyapp.directive('crewinformation', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/crewInformation.html";
+    directive.templateUrl = "templates/crewInformation.html";
 
     return directive;
 });
@@ -78,7 +78,7 @@ safetyapp.directive('egpws', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/EGPWS.html";
+    directive.templateUrl = "templates/EGPWS.html";
 
     return directive;
 });
@@ -87,7 +87,7 @@ safetyapp.directive('eventcategory', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/eventCategory.html";
+    directive.templateUrl = "templates/eventCategory.html";
 
     return directive;
 });
@@ -96,7 +96,7 @@ safetyapp.directive('eventdescription', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/eventDescription.html";
+    directive.templateUrl = "templates/eventDescription.html";
 
     return directive;
 });
@@ -105,7 +105,7 @@ safetyapp.directive('eventid', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/eventId.html";
+    directive.templateUrl = "templates/eventId.html";
 
     return directive;
 });
@@ -114,7 +114,7 @@ safetyapp.directive('firesparkssmokefumes', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/fireSparksSmokeFumes.html";
+    directive.templateUrl = "templates/fireSparksSmokeFumes.html";
 
     return directive;
 });
@@ -123,7 +123,7 @@ safetyapp.directive('flightdetails', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/flightDetails.html";
+    directive.templateUrl = "templates/flightDetails.html";
 
     return directive;
 });
@@ -132,7 +132,7 @@ safetyapp.directive('flightidentification', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/flightIdentification.html";
+    directive.templateUrl = "templates/flightIdentification.html";
 
     return directive;
 });
@@ -141,7 +141,7 @@ safetyapp.directive('laserbeamquestionnaire', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/laserBeamQuestionnaire.html";
+    directive.templateUrl = "templates/laserBeamQuestionnaire.html";
 
     return directive;
 });
@@ -150,7 +150,7 @@ safetyapp.directive('maintenanceerror', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/maintenanceError.html";
+    directive.templateUrl = "templates/maintenanceError.html";
 
     return directive;
 });
@@ -159,7 +159,7 @@ safetyapp.directive('meteorologicalinfo', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/meteorologicalInfo.html";
+    directive.templateUrl = "templates/meteorologicalInfo.html";
 
     return directive;
 });
@@ -168,7 +168,7 @@ safetyapp.directive('reportinfo', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/reportInfo.html";
+    directive.templateUrl = "templates/reportInfo.html";
 
     return directive;
 });
@@ -177,7 +177,7 @@ safetyapp.directive('systemfailure', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/systemFailure.html";
+    directive.templateUrl = "templates/systemFailure.html";
 
     return directive;
 });
@@ -186,7 +186,7 @@ safetyapp.directive('waketurbulence', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/wakeTurbulence.html";
+    directive.templateUrl = "templates/wakeTurbulence.html";
 
     return directive;
 });
@@ -195,7 +195,7 @@ safetyapp.directive('wildlifestrike', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "../templates/wildlifeStrike.html";
+    directive.templateUrl = "templates/wildlifeStrike.html";
 
     return directive;
 });
