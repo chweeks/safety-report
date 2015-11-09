@@ -1,24 +1,24 @@
 <div style = "margin-top:45px" ng-controller="formPostCtrl">
   <div ng-controller="DynamicLoadingCtrl as DLCtrl">
-    <reportinfo></reportinfo>
-    <eventid></eventid>
+    <!-- <reportinfo></reportinfo>
+    <eventid></eventid> -->
     <eventcategory></eventcategory>
-    <eventdescription></eventdescription>
+    <!-- <eventdescription></eventdescription>
     <crewinformation></crewinformation>
     <flightidentification></flightidentification>
     <flightdetails></flightdetails>
-    <meteorologicalinfo></meteorologicalinfo>
+    <meteorologicalinfo></meteorologicalinfo> -->
 
-    <laserbeamquestionnaire ng-show="DLCtrl.laserbeamquestionnaire()"></laserbeamquestionnaire>
-    <aircraftconfiguration ng-show="DLCtrl.aircraftconfiguration()"></aircraftconfiguration>
-    <airproxtcas ng-show="DLCtrl.airproxtcas()"></airproxtcas>
-    <altitudedeviation ng-show="DLCtrl.altitudedeviation()"></altitudedeviation>
-    <egpws ng-show="DLCtrl.egpws()"></egpws>
-    <maintenanceerror ng-show="DLCtrl.maintenanceerror()"></maintenanceerror>
-    <systemfailure ng-show="DLCtrl.systemfailure()"></systemfailure>
-    <waketurbulence ng-show="DLCtrl.waketurbulence()"></waketurbulence>
-    <wildlifestrike ng-show="DLCtrl.wildlifestrike()"></wildlifestrike>
-    <firesparkssmokefumes ng-show="DLCtrl.firesparkssmokefumes()"></firesparkssmokefumes>
+    <laserbeamquestionnaire ng-show="DLCtrl.laserbeamquestionnaire(event_category)"></laserbeamquestionnaire>
+    <aircraftconfiguration ng-show="DLCtrl.aircraftconfiguration(event_category)"></aircraftconfiguration>
+    <airproxtcas ng-show="DLCtrl.airproxtcas(event_category)"></airproxtcas>
+    <altitudedeviation ng-show="DLCtrl.altitudedeviation(event_category)"></altitudedeviation>
+    <egpws ng-show="DLCtrl.egpws(event_category)"></egpws>
+    <maintenanceerror ng-show="DLCtrl.maintenanceerror(event_category)"></maintenanceerror>
+    <systemfailure ng-show="DLCtrl.systemfailure(event_category)"></systemfailure>
+    <waketurbulence ng-show="DLCtrl.waketurbulence(event_category)"></waketurbulence>
+    <wildlifestrike ng-show="DLCtrl.wildlifestrike(event_category)"></wildlifestrike>
+    <firesparkssmokefumes ng-show="DLCtrl.firesparkssmokefumes(event_category)"></firesparkssmokefumes>
   </div>
   <button class="button button-block button-balanced" ng-click="formPostCtrl.postFormData()">Submit</button>
 </div>
