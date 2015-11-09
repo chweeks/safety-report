@@ -33,7 +33,7 @@ safetyapp.controller('DynamicLoadingCtrl', [ function() {
   };
 
   self.altitudedeviation = function(eventCategory) {
-    if (eventCategory == 'Altitude Deviation') {      
+    if (eventCategory == 'Altitude Deviation') {
       return true
     }
   };
