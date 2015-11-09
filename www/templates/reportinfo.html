@@ -1,32 +1,37 @@
 <h4 class='centre'>Report Information</h4>
-Report to be confidential?
-<label class="item item-radio">
-  <input type="radio" name="group" ng-model="report_to_be_confidential">
-  <div class="item-content">
-    True
-  </div>
-  <i class="radio-icon ion-checkmark"></i>
-</label>
-<label class="item item-radio">
-  <input type="radio" name="group" ng-model="report_to_be_confidential">
-  <div class="item-content">
-    False
-  </div>
-  <i class="radio-icon ion-checkmark"></i>
-</label>
 
-FDM event?
-<label class="item item-radio">
-  <input type="radio" name="group" ng-model="fdm_event">
-  <div class="item-content">
-    True
-  </div>
-  <i class="radio-icon ion-checkmark"></i>
-</label>
-<label class="item item-radio">
-  <input type="radio" name="group" ng-model="fdm_event">
-  <div class="item-content">
-    False
-  </div>
-  <i class="radio-icon ion-checkmark"></i>
-</label>
+<strong>Report to be confidential?</strong>
+
+<div class="list">
+  <label class="item item-radio">
+    <ion-radio name="confidentiality" ng-model="report_to_be_confidential">
+      True
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="confidentiality" ng-model="report_to_be_confidential">
+      False
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+
+<strong>FDM event?</strong>
+
+<div class="list">
+  <label class="item item-radio">
+    <ion-radio name="fdm" ng-model="fdm_event">
+      True
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="fdm" ng-model="fdm_event">
+      False
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
