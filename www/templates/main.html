@@ -1,13 +1,13 @@
 <div style = "margin-top:45px" ng-controller="formPostCtrl">
   <div ng-controller="DynamicLoadingCtrl as DLCtrl">
-    <!-- <reportinfo></reportinfo>
-    <eventid></eventid> -->
+    <reportinfo></reportinfo>
+    <eventid></eventid>
     <eventcategory></eventcategory>
-    <!-- <eventdescription></eventdescription>
+    <eventdescription></eventdescription>
     <crewinformation></crewinformation>
     <flightidentification></flightidentification>
     <flightdetails></flightdetails>
-    <meteorologicalinfo></meteorologicalinfo> -->
+    <meteorologicalinfo></meteorologicalinfo>
 
     <laserbeamquestionnaire ng-show="DLCtrl.laserbeamquestionnaire(event_category)"></laserbeamquestionnaire>
     <aircraftconfiguration ng-show="DLCtrl.aircraftconfiguration(event_category)"></aircraftconfiguration>
