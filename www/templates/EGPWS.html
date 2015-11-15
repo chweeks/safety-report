@@ -2,7 +2,7 @@
 
 <label class="item item-input item-select">
   <strong>Type of warning</strong>
-  <select ng-model="type_of_warning" required>
+  <select ng-model="FPCtrl.type_of_warning" required>
     <option disabled selected> select an option </option>
     <option value="Pull up">Pull up</option>
     <option value="Terrain ahead, pull up">Terrain ahead, pull up</option>
@@ -24,7 +24,7 @@
 
 <label class="item item-input item-select">
   <strong>Did you follow the EGPWS procedure?</strong>
-  <select ng-model="did_you_follow_the_egpws_procedure" required>
+  <select ng-model="FPCtrl.did_you_follow_the_egpws_procedure" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -35,14 +35,14 @@
 
 <strong>Vertical Speed (ft/min)</strong>
 <label class="item item-input">
-  <input type="number" placeholder="Vertical Speed (ft/min)" ng-model="vertical_speed">
+  <input type="number" placeholder="Vertical Speed (ft/min)" ng-model="FPCtrl.vertical_speed">
 </label>
 
 <br>
 
 <strong>Radio Altimeter (ft)</strong>
 <label class="item item-input">
-  <input type="number" placeholder="Radio Altimeter (ft)" ng-model="radio_altimeter">
+  <input type="number" placeholder="Radio Altimeter (ft)" ng-model="FPCtrl.radio_altimeter">
 </label>
 
 <br>

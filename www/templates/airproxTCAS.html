@@ -2,7 +2,7 @@
 
 <label class="item item-input item-select">
   <strong>TCAS Alert</strong>
-  <select ng-model="tcas_alert" required>
+  <select ng-model="FPCtrl.tcas_alert" required>
   <option disabled selected> select an option </option>
   <option value="TA">TA</option>
   <option value="RA">RA</option>
@@ -13,7 +13,7 @@
 
 <label class="item item-input item-select">
   <strong>Type of RA</strong>
-  <select ng-model="type_of_ra" required>
+  <select ng-model="FPCtrl.type_of_ra" required>
   <option disabled selected> select an option </option>
   <option value="Traffic">Traffic </option>
   <option value="Climb">Climb</option>
@@ -29,7 +29,7 @@
 
 <label class="item item-input item-select">
   <strong>Complied with RA Command?</strong>
-  <select ng-model="complied_with_ra_command" required>
+  <select ng-model="FPCtrl.complied_with_ra_command" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -40,7 +40,7 @@
 
 <label class="item item-input item-select">
   <strong>Loss of separation?</strong>
-  <select required ng-model="loss_of_separation">
+  <select required ng-model="FPCtrl.loss_of_separation">
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -51,21 +51,21 @@
 
 <strong>Aircraft Vertical Speed (ft/min)</strong>
 <label class="item item-input">
-  <input type="number" placeholder="Aircraft Vertical Speed (ft/min)" ng-model="aircraft_vertical_speed" required>
+  <input type="number" placeholder="Aircraft Vertical Speed (ft/min)" ng-model="FPCtrl.aircraft_vertical_speed" required>
 </label>
 
 <br>
 
 <strong>Vertical Deviation (ft)</strong>
 <label class="item item-input">
-  <input type="number" placeholder="Vertical Deviation (ft)" ng-model="vertical_deviation" required>
+  <input type="number" placeholder="Vertical Deviation (ft)" ng-model="FPCtrl.vertical_deviation" required>
 </label>
 
 <br>
 
 <label class="item item-input item-select">
   <strong>Reported to ATC?</strong>
-  <select required ng-model="reported_to_atc">
+  <select required ng-model="FPCtrl.reported_to_atc">
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>

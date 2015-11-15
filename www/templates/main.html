@@ -11,44 +11,44 @@
       <flightdetails></flightdetails>
       <meteorologicalinfo></meteorologicalinfo>
 
-      <laserbeamquestionnaire ng-show="DLCtrl.laserbeamquestionnaire(event_category)"></laserbeamquestionnaire>
-      <aircraftconfiguration ng-show="DLCtrl.aircraftconfiguration(event_category)"></aircraftconfiguration>
-      <airproxtcas ng-show="DLCtrl.airproxtcas(event_category)"></airproxtcas>
-      <altitudedeviation ng-show="DLCtrl.altitudedeviation(event_category)"></altitudedeviation>
-      <egpws ng-show="DLCtrl.egpws(event_category)"></egpws>
-      <maintenanceerror ng-show="DLCtrl.maintenanceerror(event_category)"></maintenanceerror>
-      <systemfailure ng-show="DLCtrl.systemfailure(event_category)"></systemfailure>
-      <waketurbulence ng-show="DLCtrl.waketurbulence(event_category)"></waketurbulence>
-      <wildlifestrike ng-show="DLCtrl.wildlifestrike(event_category)"></wildlifestrike>
-      <firesparkssmokefumes ng-show="DLCtrl.firesparkssmokefumes(event_category)"></firesparkssmokefumes>
+      <laserbeamquestionnaire ng-show="DLCtrl.laserbeamquestionnaire(FPCtrl.event_category)"></laserbeamquestionnaire>
+      <aircraftconfiguration ng-show="DLCtrl.aircraftconfiguration(FPCtrl.event_category)"></aircraftconfiguration>
+      <airproxtcas ng-show="DLCtrl.airproxtcas(FPCtrl.event_category)"></airproxtcas>
+      <altitudedeviation ng-show="DLCtrl.altitudedeviation(FPCtrl.event_category)"></altitudedeviation>
+      <egpws ng-show="DLCtrl.egpws(FPCtrl.event_category)"></egpws>
+      <maintenanceerror ng-show="DLCtrl.maintenanceerror(FPCtrl.event_category)"></maintenanceerror>
+      <systemfailure ng-show="DLCtrl.systemfailure(FPCtrl.event_category)"></systemfailure>
+      <waketurbulence ng-show="DLCtrl.waketurbulence(FPCtrl.event_category)"></waketurbulence>
+      <wildlifestrike ng-show="DLCtrl.wildlifestrike(FPCtrl.event_category)"></wildlifestrike>
+      <firesparkssmokefumes ng-show="DLCtrl.firesparkssmokefumes(FPCtrl.event_category)"></firesparkssmokefumes>
     </div>
 
-    <button class="button button-block button-balanced" ng-click="FPCtrl.postFormData(DLCtrl.report_to_be_confidential, DLCtrl.fdm_event,
-     DLCtrl.report_date, DLCtrl.location_airport, DLCtrl.date_the_event_occurred, DLCtrl.location_of_event_other_than_airport,
-     DLCtrl.location_country, DLCtrl.event_category, DLCtrl.event_title, DLCtrl.description_of_issueevent, DLCtrl.other_information_and_suggestions_from_the_reporter,
-     DLCtrl.any_operational_impact, DLCtrl.pilot_in_command_name, DLCtrl.second_in_command_name, DLCtrl.time_the_event_occurred, DLCtrl.cabin_crew_name,
-     DLCtrl.additional_crew_member_name, DLCtrl.callsign, DLCtrl.diversion_airport, DLCtrl.did_this_occur_in_flight, DLCtrl.tail_number, DLCtrl.aircraft_type,
-     DLCtrl.route_from, DLCtrl.route_to, DLCtrl.were_you_the_pilot_flying, DLCtrl.crew_position, DLCtrl.seat_occupied, DLCtrl.pilot_flying, DLCtrl.pilot_flying_seat,
-     DLCtrl.runway_used, DLCtrl.aircraft_altitude, DLCtrl.flft_aircraft_altitude, DLCtrl.airspeed_kias, DLCtrl.flight_phase_at_start_of_event, DLCtrl.ac_weight, DLCtrl.kglb_ac_weight,
-     DLCtrl.type_of_flight, DLCtrl.event_runway_conditions, DLCtrl.temperature_c, DLCtrl.meteorological_conditions, DLCtrl.visibility, DLCtrl.wind_direction, DLCtrl.wind_velocity, DLCtrl.qnh, DLCtrl.icing, DLCtrl.turbulence, DLCtrl.rain,
-     DLCtrl.thunderstorms, DLCtrl.msm_visibility, DLCtrl.meteorological_conditions_iv, DLCtrl.did_the_light_hit_your_eye_directly_or_from_the_side, DLCtrl.describe_visual_phychological_physical_effects,
-     DLCtrl.do_you_intend_to_seek_medical_attention, DLCtrl.duration_of_visual_effects, DLCtrl.color, DLCtrl.do_you_feel_you_were_intentionally_tracked, DLCtrl.duration_of_exposure_seconds,
-     DLCtrl.elevation_of_the_beam_from_horizontal_degrees, DLCtrl.light_source_stationary_or_moving, DLCtrl.nature_of_beam_constant_flicker_pulsed,
-     DLCtrl.position_of_light_source_relative_to_geographical_feature_of_aircraft, DLCtrl.relative_intensity_flashbulb_headlight_sunlight, DLCtrl.was_the_beam_visible_prior_to_the_incident,
-     DLCtrl.where_did_the_light_enter_the_cockpit, DLCtrl.aircraft_bank_angle, DLCtrl.aircraft_pitch_angle, DLCtrl.heading_approximate_heading_if_in_turn, DLCtrl.type_name_of_approach_or_departure_procedure,
-     DLCtrl.can_you_estimate_how_far_away_the_light_source_was_from_your_location, DLCtrl.did_any_of_these_sustain_damage_by_the_light, DLCtrl.did_anyone_else_see_the_light_beam,
-     DLCtrl.did_the_light_come_on_suddenly_and_did_it_become_brighter_as_you_approachedit, DLCtrl.did_the_light_prevent_or_hamper_you_from_doing_those_tasks_or_was_the_light_more_of_an_annoyance,
-     DLCtrl.did_the_light_seem_to_track_your_path_or_was_there_incidental_contact, DLCtrl.did_you_attempt_an_evasive_manoeuvre, DLCtrl.did_you_look_straight_into_the_light_beam_or_off_to_the_side,
-     DLCtrl.did_you_touch_or_rub_your_eyes_at_the_time_of_the_incident, DLCtrl.how_long_was_the_exposure, DLCtrl.how_successful_were_you_avoiding_it, DLCtrl.how_would_you_describe_the_brightness_of_the_light,
-     DLCtrl.if_it_flickered_how_rapidly_and_regularly, DLCtrl.if_so_did_the_beam_follow_you_as_you_tried_to_move_away, DLCtrl.was_it_equally_bright_in_all_areas_or_was_it_brighter_in_one_area,
-     DLCtrl.was_the_light_coming_directly_from_its_source_or_did_it_appear_to_be_reflected_off_other_surface, DLCtrl.was_the_light_continuous_or_did_it_seem_to_flicker, DLCtrl.was_the_source_moving,
-     DLCtrl.were_there_multiple_sources_of_light, DLCtrl.what_tasks_were_you_performing_when_the_exposure_occurred, DLCtrl.what_was_between_the_light_source_and_your_eyes, DLCtrl.autopilot, DLCtrl.autothrottle,
-     DLCtrl.flaps, DLCtrl.speedbrake, DLCtrl.spoilers, DLCtrl.gear, DLCtrl.tcas_alert, DLCtrl.type_of_ra, DLCtrl.complied_with_ra_command, DLCtrl.loss_of_separation, DLCtrl.direction_of_traffic_horizontal, DLCtrl.direction_of_traffic_vertical,
-     DLCtrl.aircraft_vertical_speed, DLCtrl.vertical_deviation, DLCtrl.reported_to_atc, DLCtrl.deviation_detected_by, DLCtrl.what_was_the_rate_of_climb_approachin_the_cleared_altitude_level, DLCtrl.thousandft_level_off,
-     DLCtrl.altitude_capture_mode_armed, DLCtrl.altitude_captured, DLCtrl.altitude_selection_confirmed_by_pnf, DLCtrl.correct_altitude_read_back_by_pnf, DLCtrl.correct_altitute_set_by_pf, DLCtrl.type_of_warning,
-     DLCtrl.did_you_follow_the_egpws_procedure, DLCtrl.vertical_speed, DLCtrl.radio_altimeter, DLCtrl.errors_description, DLCtrl.aircraft_area_damaged, DLCtrl.maintenance_facility, DLCtrl.applicable_checklist_performed,
-     DLCtrl.defect_entry_made_in_techlog, DLCtrl.position_on_glidepath, DLCtrl.heading, DLCtrl.altitude_change, DLCtrl.change_of_attitude_pitch, DLCtrl.change_of_attitude_roll, DLCtrl.change_of_attitude_yaw, DLCtrl.suspected_ac_visibile,
-     DLCtrl.suspected_aircraft_type, DLCtrl.suspected_aircraft_callsign, DLCtrl.estimated_separation_nm, DLCtrl.stickshaker, DLCtrl.type_of_animal, DLCtrl.number_of_animals_seen, DLCtrl.number_of_animals_struck, DLCtrl.describe_points_of_impact,
-     DLCtrl.fire, DLCtrl.sparks, DLCtrl.smoke, DLCtrl.fumes)">Submit</button>
+    <button class="button button-block button-balanced" ng-click="FPCtrl.postFormData(FPCtrl.report_to_be_confidential, FPCtrl.fdm_event,
+     FPCtrl.report_date, FPCtrl.location_airport, FPCtrl.date_the_event_occurred, FPCtrl.location_of_event_other_than_airport,
+     FPCtrl.location_country, FPCtrl.event_category, FPCtrl.event_title, FPCtrl.description_of_issueevent, FPCtrl.other_information_and_suggestions_from_the_reporter,
+     FPCtrl.any_operational_impact, FPCtrl.pilot_in_command_name, FPCtrl.second_in_command_name, FPCtrl.time_the_event_occurred, FPCtrl.cabin_crew_name,
+     FPCtrl.additional_crew_member_name, FPCtrl.callsign, FPCtrl.diversion_airport, FPCtrl.did_this_occur_in_flight, FPCtrl.tail_number, FPCtrl.aircraft_type,
+     FPCtrl.route_from, FPCtrl.route_to, FPCtrl.were_you_the_pilot_flying, FPCtrl.crew_position, FPCtrl.seat_occupied, FPCtrl.pilot_flying, FPCtrl.pilot_flying_seat,
+     FPCtrl.runway_used, FPCtrl.aircraft_altitude, FPCtrl.flft_aircraft_altitude, FPCtrl.airspeed_kias, FPCtrl.flight_phase_at_start_of_event, FPCtrl.ac_weight, FPCtrl.kglb_ac_weight,
+     FPCtrl.type_of_flight, FPCtrl.event_runway_conditions, FPCtrl.temperature_c, FPCtrl.meteorological_conditions, FPCtrl.visibility, FPCtrl.wind_direction, FPCtrl.wind_velocity, FPCtrl.qnh, FPCtrl.icing, FPCtrl.turbulence, FPCtrl.rain,
+     FPCtrl.thunderstorms, FPCtrl.msm_visibility, FPCtrl.meteorological_conditions_iv, FPCtrl.did_the_light_hit_your_eye_directly_or_from_the_side, FPCtrl.describe_visual_phychological_physical_effects,
+     FPCtrl.do_you_intend_to_seek_medical_attention, FPCtrl.duration_of_visual_effects, FPCtrl.color, FPCtrl.do_you_feel_you_were_intentionally_tracked, FPCtrl.duration_of_exposure_seconds,
+     FPCtrl.elevation_of_the_beam_from_horizontal_degrees, FPCtrl.light_source_stationary_or_moving, FPCtrl.nature_of_beam_constant_flicker_pulsed,
+     FPCtrl.position_of_light_source_relative_to_geographical_feature_of_aircraft, FPCtrl.relative_intensity_flashbulb_headlight_sunlight, FPCtrl.was_the_beam_visible_prior_to_the_incident,
+     FPCtrl.where_did_the_light_enter_the_cockpit, FPCtrl.aircraft_bank_angle, FPCtrl.aircraft_pitch_angle, FPCtrl.heading_approximate_heading_if_in_turn, FPCtrl.type_name_of_approach_or_departure_procedure,
+     FPCtrl.can_you_estimate_how_far_away_the_light_source_was_from_your_location, FPCtrl.did_any_of_these_sustain_damage_by_the_light, FPCtrl.did_anyone_else_see_the_light_beam,
+     FPCtrl.did_the_light_come_on_suddenly_and_did_it_become_brighter_as_you_approachedit, FPCtrl.did_the_light_prevent_or_hamper_you_from_doing_those_tasks_or_was_the_light_more_of_an_annoyance,
+     FPCtrl.did_the_light_seem_to_track_your_path_or_was_there_incidental_contact, FPCtrl.did_you_attempt_an_evasive_manoeuvre, FPCtrl.did_you_look_straight_into_the_light_beam_or_off_to_the_side,
+     FPCtrl.did_you_touch_or_rub_your_eyes_at_the_time_of_the_incident, FPCtrl.how_long_was_the_exposure, FPCtrl.how_successful_were_you_avoiding_it, FPCtrl.how_would_you_describe_the_brightness_of_the_light,
+     FPCtrl.if_it_flickered_how_rapidly_and_regularly, FPCtrl.if_so_did_the_beam_follow_you_as_you_tried_to_move_away, FPCtrl.was_it_equally_bright_in_all_areas_or_was_it_brighter_in_one_area,
+     FPCtrl.was_the_light_coming_directly_from_its_source_or_did_it_appear_to_be_reflected_off_other_surface, FPCtrl.was_the_light_continuous_or_did_it_seem_to_flicker, FPCtrl.was_the_source_moving,
+     FPCtrl.were_there_multiple_sources_of_light, FPCtrl.what_tasks_were_you_performing_when_the_exposure_occurred, FPCtrl.what_was_between_the_light_source_and_your_eyes, FPCtrl.autopilot, FPCtrl.autothrottle,
+     FPCtrl.flaps, FPCtrl.speedbrake, FPCtrl.spoilers, FPCtrl.gear, FPCtrl.tcas_alert, FPCtrl.type_of_ra, FPCtrl.complied_with_ra_command, FPCtrl.loss_of_separation, FPCtrl.direction_of_traffic_horizontal, FPCtrl.direction_of_traffic_vertical,
+     FPCtrl.aircraft_vertical_speed, FPCtrl.vertical_deviation, FPCtrl.reported_to_atc, FPCtrl.deviation_detected_by, FPCtrl.what_was_the_rate_of_climb_approachin_the_cleared_altitude_level, FPCtrl.thousandft_level_off,
+     FPCtrl.altitude_capture_mode_armed, FPCtrl.altitude_captured, FPCtrl.altitude_selection_confirmed_by_pnf, FPCtrl.correct_altitude_read_back_by_pnf, FPCtrl.correct_altitute_set_by_pf, FPCtrl.type_of_warning,
+     FPCtrl.did_you_follow_the_egpws_procedure, FPCtrl.vertical_speed, FPCtrl.radio_altimeter, FPCtrl.errors_description, FPCtrl.aircraft_area_damaged, FPCtrl.maintenance_facility, FPCtrl.applicable_checklist_performed,
+     FPCtrl.defect_entry_made_in_techlog, FPCtrl.position_on_glidepath, FPCtrl.heading, FPCtrl.altitude_change, FPCtrl.change_of_attitude_pitch, FPCtrl.change_of_attitude_roll, FPCtrl.change_of_attitude_yaw, FPCtrl.suspected_ac_visibile,
+     FPCtrl.suspected_aircraft_type, FPCtrl.suspected_aircraft_callsign, FPCtrl.estimated_separation_nm, FPCtrl.stickshaker, FPCtrl.type_of_animal, FPCtrl.number_of_animals_seen, FPCtrl.number_of_animals_struck, FPCtrl.describe_points_of_impact,
+     FPCtrl.fire, FPCtrl.sparks, FPCtrl.smoke, FPCtrl.fumes)">Submit</button>
   </div>
 </ion-content>

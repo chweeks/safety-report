@@ -2,27 +2,27 @@
 
 <strong>Callsign</strong>
 <label class="item item-input">
-  <input type="text" placeholder="Callsign" ng-model="callsign">
+  <input type="text" placeholder="Callsign" ng-model="FPCtrl.callsign">
 </label>
 
 <br>
 
 <strong>Diversion Airport</strong>
 <label class="item item-input">
-  <input type="text" placeholder="Diversion Airport" ng-model="diversion_airport">
+  <input type="text" placeholder="Diversion Airport" ng-model="FPCtrl.diversion_airport">
 </label>
 
 <br>
 
 <strong>Did this occur in flight?</strong>
 <label class="item item-radio">
-  <ion-radio name="group1" ng-model="did_this_occur_in_flight">
+  <ion-radio name="group1" ng-model="FPCtrl.did_this_occur_in_flight" value="true">
     Yes
   <i class="radio-icon ion-checkmark"></i>
 </label>
 
 <label class="item item-radio">
-  <ion-radio name="group1" ng-model="did_this_occur_in_flight">
+  <ion-radio name="group1" ng-model="FPCtrl.did_this_occur_in_flight" value="false">
     No
   <i class="radio-icon ion-checkmark"></i>
 </label>
@@ -33,7 +33,7 @@
   <div class="input-label">
     <strong>Tail Number</strong>
   </div>
-  <select ng-model="tail_number" required>
+  <select ng-model="FPCtrl.tail_number" required>
     <option disabled selected> select an option </option>
     <option>CS-DXE</option>
     <option>CS-DXF</option>
@@ -134,7 +134,7 @@
   <div class="input-label">
     <strong>Aircraft Type</strong>
   </div>
-  <select ng-model="aircraft_type" required>
+  <select ng-model="FPCtrl.aircraft_type" required>
     <option disabled selected> select an option </option>
     <option>CE-560XLS</option>
     <option>HS-125-800XPC</option>
@@ -154,14 +154,14 @@
 
 <strong>Route From</strong>
 <label class="item item-input">
-  <input type="text" placeholder="Route From" ng-model="route_from" required>
+  <input type="text" placeholder="Route From" ng-model="FPCtrl.route_from" required>
 </label>
 
 <br>
 
 <strong>Route To</strong>
 <label class="item item-input">
-  <input type="text" placeholder="Route To" ng-model="route_to"required>
+  <input type="text" placeholder="Route To" ng-model="FPCtrl.route_to"required>
 </label>
 
 <br>

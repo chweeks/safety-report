@@ -2,21 +2,21 @@
 
 <strong>Deviation detected by</strong>
 <label class="item item-input">
-  <input type="text" placeholder="Deviation detected by" ng-model="deviation_detected_by" required>
+  <input type="text" placeholder="Deviation detected by" ng-model="FPCtrl.deviation_detected_by" required>
 </label>
 
 <br>
 
 <strong>What was the rate of climb approaching the cleared altitude level</strong>
 <label class="item item-input">
-  <input type="number" placeholder="What was the rate of climb approaching the cleared altitude level" ng-model="what_was_the_rate_of_climb_approachin_the_cleared_altitude_level">
+  <input type="number" placeholder="What was the rate of climb approaching the cleared altitude level" ng-model="FPCtrl.what_was_the_rate_of_climb_approachin_the_cleared_altitude_level">
 </label>
 
 <br>
 
 <label class="item item-input item-select">
   <strong>1000ft level off</strong>
-  <select ng-model="thousandft_level_off" required>
+  <select ng-model="FPCtrl.thousandft_level_off" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -27,7 +27,7 @@
 
 <label class="item item-input item-select">
   <strong>Altitude capture mode armed</strong>
-  <select ng-model="altitude_capture_mode_armed" required>
+  <select ng-model="FPCtrl.altitude_capture_mode_armed" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -38,7 +38,7 @@
 
 <label class="item item-input item-select">
   <strong>Altitude captured</strong>
-  <select ng-model="altitude_captured" required>
+  <select ng-model="FPCtrl.altitude_captured" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -49,7 +49,7 @@
 
 <label class="item item-input item-select">
   <strong>Altitude selection confirmed by PNF</strong>
-  <select ng-model="altitude_selection_confirmed_by_pnf" required>
+  <select ng-model="FPCtrl.altitude_selection_confirmed_by_pnf" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -60,7 +60,7 @@
 
 <label class="item item-input item-select">
   <strong>Correct altitude read back by PNF</strong>
-  <select ng-model="correct_altitude_read_back_by_pnf" required>
+  <select ng-model="FPCtrl.correct_altitude_read_back_by_pnf" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -71,7 +71,7 @@
 
 <label class="item item-input item-select">
   <strong>Correct altitute set by PF</strong>
-  <select ng-model="correct_altitude_set_by_pf" required>
+  <select ng-model="FPCtrl.correct_altitude_set_by_pf" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>

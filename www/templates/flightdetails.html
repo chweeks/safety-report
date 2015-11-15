@@ -2,7 +2,7 @@
 
 <label class="item item-input item-select">
   <strong>Were you the pilot flying?</strong>
-  <select ng-model="were_you_the_pilot_flying" required>
+  <select ng-model="FPCtrl.were_you_the_pilot_flying" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
   <option value="false">False</option>
@@ -13,7 +13,7 @@
 
 <label class="item item-input item-select">
   <strong>Pilot Flying?</strong>
-  <select ng-model="pilot_flying" required>
+  <select ng-model="FPCtrl.pilot_flying" required>
   <option disabled selected> select an option </option>
   <option value="true">PIC</option>
   <option value="false">SIC</option>
@@ -24,10 +24,10 @@
 
 <label class="item item-input item-select">
   <strong>Pilot Flying Seat?</strong>
-  <select ng-model="pilot_flying_seat" required>
+  <select ng-model="FPCtrl.pilot_flying_seat" required>
   <option disabled selected> select an option </option>
-  <option value="true">Right</option>
-  <option value="false">Left</option>
+  <option value="Right">Right</option>
+  <option value="Left">Left</option>
   </select>
 </label>
 
@@ -35,7 +35,7 @@
 
 <strong>Runway Used</strong>
 <label class="item item-input">
-  <input type="text" placeholder="Runway Used" ng-model="runway_used">
+  <input type="text" placeholder="Runway Used" ng-model="FPCtrl.runway_used">
 </label>
 
 <br>
@@ -43,7 +43,7 @@
 <strong>Aircraft Altitude</strong>
 <label class="item item-input">
   <input type="number" placeholder="Aircraft Altitude">
-  <select ng-model="aircraft_altitude" required>
+  <select ng-model="FPCtrl.aircraft_altitude" required>
   <option disabled selected> select an option </option>
   <option value="true">ft</option>
   <option value="false">FL</option>
@@ -54,7 +54,7 @@
 
 <strong>Airspeed (KIAS)</strong>
 <label class="item item-input">
-  <input type="number" placeholder="Airspeed (KIAS)" ng-model="airspeed_kias">
+  <input type="number" placeholder="Airspeed (KIAS)" ng-model="FPCtrl.airspeed_kias">
 </label>
 
 <br>
@@ -63,7 +63,7 @@
   <strong>Flight Phase at Start of Event</strong>
   <div class="input-label">
   </div>
-  <select ng-model="flight_phase_at_start_of_event">
+  <select ng-model="FPCtrl.flight_phase_at_start_of_event">
     <option disabled selected> select an option </option>
     <option>Non-Flight</option>
     <option>Predeparture / Preflight</option>
@@ -92,7 +92,7 @@
 <strong>A/C Weight</strong>
 <label class="item item-input">
   <input type="text" placeholder="A/C Weight">
-  <select ng-model="ac_weight" required>
+  <select ng-model="FPCtrl.ac_weight" required>
   <option disabled selected> select an option </option>
   <option value="true">Kg</option>
   <option value="false">lb</option>
@@ -105,7 +105,7 @@
   <div class="input-label">
     <strong>Type of Flight</strong>
   </div>
-  <select ng-model="type_of_flight">
+  <select ng-model="FPCtrl.type_of_flight">
     <option disabled selected> select an option </option>
     <option>Admin</option>
     <option>OCF</option>
@@ -123,7 +123,7 @@
   <div class="input-label">
     <strong>Event Runway Conditions<strong>
   </div>
-  <select ng-model="event_runway_conditions">
+  <select ng-model="FPCtrl.event_runway_conditions">
     <option disabled selected> select an option </option>
     <option>Dry</option>
     <option>Wet</option>

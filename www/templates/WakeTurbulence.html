@@ -2,7 +2,7 @@
 
 <label class="item item-select">
 <strong>Position on Glidepath</strong>
-  <select ng-model="position_on_glidepath">
+  <select ng-model="FPCtrl.position_on_glidepath">
     <option disabled selected> select an option </option>
     <option value="True">High</option>
     <option value="False">Low</option>
@@ -14,42 +14,42 @@
 
 <strong>Heading<strong>
 <label class="item item-input">
-  <input type="text" ng-model="altitude_change" placeholder="Heading">
+  <input type="text" ng-model="FPCtrl.altitude_change" placeholder="Heading">
 </label>
 
 <br>
 
 <strong>Altitude Change<strong>
 <label class="item item-input">
-  <input type="text" ng-model="altitude_change" placeholder="Altitude Change">
+  <input type="text" ng-model="FPCtrl.altitude_change" placeholder="Altitude Change">
 </label>
 
 <br>
 
 <strong>Change of attitude - Pitch</strong>
 <label class="item item-input">
-  <input type="text" ng-model="change_of_attitude_pitch" placeholder="Change of attitude - Pitch">
+  <input type="text" ng-model="FPCtrl.change_of_attitude_pitch" placeholder="Change of attitude - Pitch">
 </label>
 
 <br>
 
 <strong>Change of attitude - Roll</strong>
 <label class="item item-input">
-  <input type="text" ng-model="change_of_attitude_roll" placeholder="Change of attitude - Roll">
+  <input type="text" ng-model="FPCtrl.change_of_attitude_roll" placeholder="Change of attitude - Roll">
 </label>
 
 <br>
 
 <strong>Change of attitude - Yaw</strong>
 <label class="item item-input">
-  <input type="text" ng-model="change_of_attitude_yaw" placeholder="Change of attitude - Yaw">
+  <input type="text" ng-model="FPCtrl.change_of_attitude_yaw" placeholder="Change of attitude - Yaw">
 </label>
 
 <br>
 
 <label class="item item-select">
 <strong>Suspected a/c visibile?</strong>
-  <select ng-model="suspected_ac_visibile">
+  <select ng-model="FPCtrl.suspected_ac_visibile">
     <option disabled selected> select an option </option>
     <option value="True">True</option>
     <option value="False">False</option>
@@ -61,28 +61,28 @@
 
 <strong>Suspected aircraft type</strong>
 <label class="item item-input">
-  <input type="text" ng-model="suspected_aircraft_type" placeholder="Suspected aircraft type">
+  <input type="text" ng-model="FPCtrl.suspected_aircraft_type" placeholder="Suspected aircraft type">
 </label>
 
 <br>
 
 <strong>Suspected aircraft Callsign</strong>
 <label class="item item-input">
-  <input type="text" ng-model="suspected_aircraft_callsign" placeholder="Suspected aircraft Callsign">
+  <input type="text" ng-model="FPCtrl.suspected_aircraft_callsign" placeholder="Suspected aircraft Callsign">
 </label>
 
 <br>
 
 <strong>Estimated Separation (NM)</strong>
 <label class="item item-input">
-  <input type="text" ng-model="estimated_separation_nm" placeholder="Estimated Separation (NM)">
+  <input type="text" ng-model="FPCtrl.estimated_separation_nm" placeholder="Estimated Separation (NM)">
 </label>
 
 <br>
 
 <label class="item item-select">
 <strong>Stickshaker</strong>
-<select ng-model="stickshaker">
+<select ng-model="FPCtrl.stickshaker">
   <option disabled selected> select an option </option>
   <option type="radio" name="Stickshaker" value="True" checked> True</option>
   <option type="radio" name="Stickshaker" value="False"> False </option>

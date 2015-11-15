@@ -2,21 +2,21 @@
 
 <strong>Event Title</strong>
 <label class="item item-input">
-  <input type="text" placeholder="Event Title" ng-model="event_title">
+  <input type="text" placeholder="Event Title" ng-model="FPCtrl.event_title">
 </label>
 
 <br>
 
 <strong>Description of Issue / Event</strong>
 <label class="item item-input">
-  <input type="text" placeholder="Description of Issue / Event" ngn-model="description_of_issueevent" required>
+  <input type="text" placeholder="Description of Issue / Event" ng-model="FPCtrl.description_of_issueevent" required>
 </label>
 
 <br>
 
 <strong>Other information and suggestions from the reporter</strong>
 <label class="item item-input">
-  <input type="text" placeholder="Other information and suggestions from the reporter" ng-model="other_information_and_suggestions_from_the_reporter">
+  <input type="text" placeholder="Other information and suggestions from the reporter" ng-model="FPCtrl.other_information_and_suggestions_from_the_reporter">
 </label>
 
 <br>
@@ -25,7 +25,7 @@
   <div class="input-label">
     <strong>Operational Impact</strong>
   </div>
-  <select ng-model="any_operational_impact">
+  <select ng-model="FPCtrl.any_operational_impact">
     <option disabled selected> select an option </option>
     <option>Removed from duty</option>
     <option>Schedule changed</option>
