@@ -1,4 +1,4 @@
-safetyapp.controller('signUpCtrl', ['$http', '$cookies', function($http, $cookies) {
+safetyapp.controller('signUpCtrl', ['$http', '$cookies', '$state', function($http, $cookies, $state) {
   var self = this;
 
   self.postSignUp = function(email, password, passwordconf, name, address, primaryphone, secondaryphone, rank, crewmemtype, otheremployee) {
