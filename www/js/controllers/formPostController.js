@@ -146,7 +146,7 @@ safetyapp.controller('formPostCtrl', ['$http', '$cookies', '$state', function($h
                     'auth_key': $cookies.get('auth_key'),
                     'user_id': $cookies.get('user_id')}
       $http.post('https://immense-castle-3453.herokuapp.com/events', postData, 'POST').success(function() {
-        $state.go('submitted');
+        $state.go('submissionComplete');
       });
     };
 }]);
