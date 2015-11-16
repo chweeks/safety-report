@@ -49,7 +49,7 @@ safetyapp.directive('airproxtcas', function() {
     var directive = {};
 
     directive.restrict = 'E';
-    directive.templateUrl = "templates/airproxtcas.html";
+    directive.templateUrl = "templates/airproxTCAS.html";
 
     return directive;
 });
