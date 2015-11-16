@@ -29,6 +29,10 @@ function ($stateProvider, $urlRouterProvider) {
           url: "/form",
           templateUrl: 'templates/main.html'
       })
+      .state('submissionComplete', {
+          url: "/submitted",
+          templateUrl: 'templates/submitted.html'
+      })
   }
 ]);
 
