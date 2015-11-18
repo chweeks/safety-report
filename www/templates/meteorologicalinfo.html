@@ -28,6 +28,17 @@
 <label class="item item-input">
   <input type="text" placeholder="Visibility" ng-model="FPCtrl.visibility">
 </label>
+<label class="item item-radio">
+  <ion-radio name="group3" ng-model="FPCtrl.msm_visibility" value="m">
+    m
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+
+<label class="item item-radio">
+  <ion-radio name="group3" ng-model="FPCtrl.msm_visibility" value="SM">
+    SM
+  <i class="radio-icon ion-checkmark"></i>
+</label>
 
 <br>
 
@@ -105,21 +116,6 @@
 <label class="item item-radio">
   <ion-radio name="group2" ng-model="FPCtrl.thunderstorms" value="false">
     No
-  <i class="radio-icon ion-checkmark"></i>
-</label>
-
-<br>
-
-<strong>Visibility?</strong>
-<label class="item item-radio">
-  <ion-radio name="group3" ng-model="FPCtrl.msm_visibility" value="m">
-    m
-  <i class="radio-icon ion-checkmark"></i>
-</label>
-
-<label class="item item-radio">
-  <ion-radio name="group3" ng-model="FPCtrl.msm_visibility" value="SM">
-    SM
   <i class="radio-icon ion-checkmark"></i>
 </label>
 
