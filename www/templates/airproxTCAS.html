@@ -1,7 +1,7 @@
 <h4 class='centre'> Airprox / TCAS</h4>
 
 <label class="item item-input item-select">
-  <strong>TCAS Alert</strong>
+  <strong>TCAS Alert</strong><small class="error">*</small>
   <select ng-model="FPCtrl.tcas_alert" required>
   <option disabled selected> select an option </option>
   <option value="TA">TA</option>
@@ -12,7 +12,7 @@
 <br>
 
 <label class="item item-input item-select">
-  <strong>Type of RA</strong>
+  <strong>Type of RA</strong><small class="error">*</small>
   <select ng-model="FPCtrl.type_of_ra" required>
   <option disabled selected> select an option </option>
   <option value="Traffic">Traffic </option>
@@ -28,7 +28,7 @@
 <br>
 
 <label class="item item-input item-select">
-  <strong>Complied with RA Command?</strong>
+  <strong>Complied with RA Command?</strong><small class="error">*</small>
   <select ng-model="FPCtrl.complied_with_ra_command" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
@@ -39,7 +39,7 @@
 <br>
 
 <label class="item item-input item-select">
-  <strong>Loss of separation?</strong>
+  <strong>Loss of separation?</strong><small class="error">*</small>
   <select required ng-model="FPCtrl.loss_of_separation">
   <option disabled selected> select an option </option>
   <option value="true">True</option>
@@ -49,14 +49,14 @@
 
 <br>
 
-<strong>Aircraft Vertical Speed (ft/min)</strong>
+<strong>Aircraft Vertical Speed (ft/min)</strong><small class="error">*</small>
 <label class="item item-input">
   <input type="number" placeholder="Aircraft Vertical Speed (ft/min)" ng-model="FPCtrl.aircraft_vertical_speed" required>
 </label>
 
 <br>
 
-<strong>Vertical Deviation (ft)</strong>
+<strong>Vertical Deviation (ft)</strong><small class="error">*</small>
 <label class="item item-input">
   <input type="number" placeholder="Vertical Deviation (ft)" ng-model="FPCtrl.vertical_deviation" required>
 </label>
@@ -64,7 +64,7 @@
 <br>
 
 <label class="item item-input item-select">
-  <strong>Reported to ATC?</strong>
+  <strong>Reported to ATC?</strong><small class="error">*</small>
   <select required ng-model="FPCtrl.reported_to_atc">
   <option disabled selected> select an option </option>
   <option value="true">True</option>

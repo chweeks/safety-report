@@ -22,3 +22,9 @@
 #paddingBottom {
   padding-bottom:35px;
 }
+.error {
+  color: red;
+}
+/*input.ng-invalid {
+  border: 1px solid red;
+}*/

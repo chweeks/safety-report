@@ -1,6 +1,6 @@
 <h4 class='centre'> Altitude Deviation </h4>
 
-<strong>Deviation detected by</strong>
+<strong>Deviation detected by</strong><span class="error"> *</span>
 <label class="item item-input">
   <input type="text" placeholder="Deviation detected by" ng-model="FPCtrl.deviation_detected_by" required>
 </label>
@@ -15,7 +15,7 @@
 <br>
 
 <label class="item item-input item-select">
-  <strong>1000ft level off</strong>
+  <strong>1000ft level off</strong><span class="error"> *</span>
   <select ng-model="FPCtrl.thousandft_level_off" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
@@ -26,7 +26,7 @@
 <br>
 
 <label class="item item-input item-select">
-  <strong>Altitude capture mode armed</strong>
+  <strong>Altitude capture mode armed</strong><span class="error"> *</span>
   <select ng-model="FPCtrl.altitude_capture_mode_armed" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
@@ -37,7 +37,7 @@
 <br>
 
 <label class="item item-input item-select">
-  <strong>Altitude captured</strong>
+  <strong>Altitude captured</strong><span class="error"> *</span>
   <select ng-model="FPCtrl.altitude_captured" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
@@ -48,7 +48,7 @@
 <br>
 
 <label class="item item-input item-select">
-  <strong>Altitude selection confirmed by PNF</strong>
+  <strong>Altitude selection confirmed by PNF</strong><span class="error"> *</span>
   <select ng-model="FPCtrl.altitude_selection_confirmed_by_pnf" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
@@ -59,7 +59,7 @@
 <br>
 
 <label class="item item-input item-select">
-  <strong>Correct altitude read back by PNF</strong>
+  <strong>Correct altitude read back by PNF</strong><span class="error"> *</span>
   <select ng-model="FPCtrl.correct_altitude_read_back_by_pnf" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>
@@ -70,7 +70,7 @@
 <br>
 
 <label class="item item-input item-select">
-  <strong>Correct altitute set by PF</strong>
+  <strong>Correct altitute set by PF</strong><span class="error"> *</span>
   <select ng-model="FPCtrl.correct_altitude_set_by_pf" required>
   <option disabled selected> select an option </option>
   <option value="true">True</option>

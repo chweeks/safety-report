@@ -31,7 +31,7 @@
 
 <label class="item item-input item-select">
   <div class="input-label">
-    <strong>Tail Number</strong>
+    <strong>Tail Number</strong><span class="error"> *</span>
   </div>
   <select ng-model="FPCtrl.tail_number" required>
     <option disabled selected> select an option </option>
@@ -132,7 +132,7 @@
 
 <label class="item item-input item-select">
   <div class="input-label">
-    <strong>Aircraft Type</strong>
+    <strong>Aircraft Type</strong><span class="error"> *</span>
   </div>
   <select ng-model="FPCtrl.aircraft_type" required>
     <option disabled selected> select an option </option>
@@ -152,14 +152,14 @@
 
 <br>
 
-<strong>Route From</strong>
+<strong>Route From</strong><span class="error"> *</span>
 <label class="item item-input">
   <input type="text" placeholder="Route From" ng-model="FPCtrl.route_from" required>
 </label>
 
 <br>
 
-<strong>Route To</strong>
+<strong>Route To</strong><span class="error"> *</span>
 <label class="item item-input">
   <input type="text" placeholder="Route To" ng-model="FPCtrl.route_to"required>
 </label>
