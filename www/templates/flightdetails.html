@@ -1,25 +1,41 @@
 <h4 class='centre'>Flight Details</h4>
 
-<label class="item item-input item-select">
-  <strong>Pilot Flying?</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.pilot_flying" required>
-  <option disabled selected> select an option </option>
-  <option value="true">PIC</option>
-  <option value="false">SIC</option>
-  </select>
-</label>
+<strong>Pilot Flying?</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.pilot_flying" value="PIC" required>
+      PIC
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.pilot_flying" value="SIC">
+      SIC
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
 
 <br>
+<br>
+<br>
 
-<label class="item item-input item-select">
-  <strong>Pilot Flying Seat?</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.pilot_flying_seat" required>
-  <option disabled selected> select an option </option>
-  <option value="Right">Right</option>
-  <option value="Left">Left</option>
-  </select>
-</label>
+<strong>Pilot Flying Seat?</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.pilot_flying_seat" value='Right' required>
+      Right
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
 
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.pilot_flying_seat" value="Left">
+      Left
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
 <br>
 
 <strong>Runway Used</strong>
@@ -29,16 +45,24 @@
 
 <br>
 
-<strong>Aircraft Altitude</strong><span class="error"> *</span>
-<label class="item item-input">
-  <input type="number" placeholder="Aircraft Altitude">
-  <select ng-model="FPCtrl.aircraft_altitude" required>
-  <option disabled selected> select an option </option>
-  <option value="true">ft</option>
-  <option value="false">FL</option>
-  </select>
-</label>
+<strong>Aircraft Altitude</strong><small class="error">*</small>
+<div class="inline">
+  <input type="number" placeholder="Aircraft Altitude" ng-model="FPCtrl.aircraft_altitude">
+  <label class="item item-radio">
+    <ion-radio name="group3" ng-model="FPCtrl.aircraft_altitude_units" value='ft' required>
+      ft
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
 
+  <label class="item item-radio">
+    <ion-radio name="group3" ng-model="FPCtrl.aircraft_altitude_units" value="FL">
+      FL
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
 <br>
 
 <strong>Indicated Airspeed (KIAS)</strong>
@@ -78,16 +102,25 @@
 
 <br>
 
-<strong>A/C Weight</strong><span class="error"> *</span>
-<label class="item item-input">
-  <input type="text" placeholder="A/C Weight">
-  <select ng-model="FPCtrl.ac_weight" required>
-  <option disabled selected> select an option </option>
-  <option value="true">Kg</option>
-  <option value="false">lb</option>
-  </select>
-</label>
+<strong>A/C Weight</strong><small class="error">*</small>
+<div class="inline">
+  <input type="number" placeholder="A/C Weight" ng-model="FPCtrl.ac_weight">
+  <label class="item item-radio">
+    <ion-radio name="group4" ng-model="FPCtrl.ac_weight_units" value='ft' required>
+      Kg
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
 
+  <label class="item item-radio">
+    <ion-radio name="group4" ng-model="FPCtrl.ac_weight_units" value="FL">
+      lb
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
 <br>
 
 <label class="item item-input item-select">

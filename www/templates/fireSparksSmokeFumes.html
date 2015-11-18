@@ -1,45 +1,77 @@
 <h4 class='centre'> Fire, Sparks, Smoke & Fumes </h4>
 
-<label class="item item-input item-select">
-  <strong>Fire</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.fire" required>
-  <option disabled selected> select an option </option>
-  <option value="true">Yes</option>
-  <option value="false">No</option>
-  </select>
-</label>
+<strong>Fire</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.fire" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.fire" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
 
 <br>
-
-<label class="item item-input item-select">
-  <strong>Sparks</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.sparks" required>
-  <option disabled selected> select an option </option>
-  <option value="true">Yes</option>
-  <option value="false">No</option>
-  </select>
-</label>
-
+<br>
 <br>
 
-<label class="item item-input item-select">
-  <strong>Smoke</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.smoke" required>
-  <option disabled selected> select an option </option>
-  <option value="true">Yes</option>
-  <option value="false">No</option>
-  </select>
-</label>
+<strong>Sparks</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.sparks" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.sparks" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
 
 <br>
+<br>
+<br>
 
-<label class="item item-input item-select">
-  <strong>Fumes</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.fumes" required>
-  <option disabled selected> select an option </option>
-  <option value="true">Yes</option>
-  <option value="false">No</option>
-  </select>
-</label>
+<strong>Smoke</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.smoke" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
 
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.smoke" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
+
+<strong>Fumes</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.fumes" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.fumes" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
 <br>

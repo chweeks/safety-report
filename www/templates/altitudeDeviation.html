@@ -14,68 +14,122 @@
 
 <br>
 
-<label class="item item-input item-select">
-  <strong>1000ft level off</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.thousandft_level_off" required>
-  <option disabled selected> select an option </option>
-  <option value="true">Yes</option>
-  <option value="false">No</option>
-  </select>
-</label>
+<strong>1000ft level off</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.thousandft_level_off" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.thousandft_level_off" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
 
 <br>
-
-<label class="item item-input item-select">
-  <strong>Altitude capture mode armed</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.altitude_capture_mode_armed" required>
-  <option disabled selected> select an option </option>
-  <option value="true">Yes</option>
-  <option value="false">No</option>
-  </select>
-</label>
-
+<br>
+<br>
 <br>
 
-<label class="item item-input item-select">
-  <strong>Altitude captured</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.altitude_captured" required>
-  <option disabled selected> select an option </option>
-  <option value="true">True</option>
-  <option value="false">False</option>
-  </select>
-</label>
+<strong>Altitude capture mode armed</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.altitude_capture_mode_armed" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.altitude_capture_mode_armed" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
 
 <br>
-
-<label class="item item-input item-select">
-  <strong>Altitude selection confirmed by PNF</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.altitude_selection_confirmed_by_pnf" required>
-  <option disabled selected> select an option </option>
-  <option value="true">True</option>
-  <option value="false">False</option>
-  </select>
-</label>
-
+<br>
+<br>
 <br>
 
-<label class="item item-input item-select">
-  <strong>Correct altitude read back by PNF</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.correct_altitude_read_back_by_pnf" required>
-  <option disabled selected> select an option </option>
-  <option value="true">True</option>
-  <option value="false">False</option>
-  </select>
-</label>
+<strong>Altitude captured</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group3" ng-model="FPCtrl.altitude_captured" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group3" ng-model="FPCtrl.altitude_captured" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
 
 <br>
+<br>
+<br>
+<br>
 
-<label class="item item-input item-select">
-  <strong>Correct altitute set by PF</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.correct_altitude_set_by_pf" required>
-  <option disabled selected> select an option </option>
-  <option value="true">True</option>
-  <option value="false">False</option>
-  </select>
-</label>
+<strong>Altitude selection confirmed by PNF</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group4" ng-model="FPCtrl.altitude_selection_confirmed_by_pnf" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
 
+  <label class="item item-radio">
+    <ion-radio name="group4" ng-model="FPCtrl.altitude_selection_confirmed_by_pnf" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<strong>Correct altitude read back by PNF</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group5" ng-model="FPCtrl.correct_altitude_read_back_by_pnf" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group5" ng-model="FPCtrl.correct_altitude_read_back_by_pnf" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<strong>Correct altitute set by PF</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group6" ng-model="FPCtrl.correct_altitude_set_by_pf" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group6" ng-model="FPCtrl.correct_altitude_set_by_pf" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
 <br>

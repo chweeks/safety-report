@@ -22,15 +22,23 @@
 
 <br>
 
-<label class="item item-input item-select">
-  <strong>Did you follow the EGPWS procedure?</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.did_you_follow_the_egpws_procedure" required>
-  <option disabled selected> select an option </option>
-  <option value="true">Yes</option>
-  <option value="false">No</option>
-  </select>
-</label>
+<strong>Did you follow the EGPWS procedure?</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.did_you_follow_the_egpws_procedure" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
 
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.did_you_follow_the_egpws_procedure" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
 <br>
 
 <strong>Vertical Speed (ft/min)</strong>

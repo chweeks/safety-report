@@ -25,6 +25,7 @@
 .error {
   color: red;
 }
-/*input.ng-invalid {
-  border: 1px solid red;
-}*/
+.inline {
+  display: inline-flex;
+  float: right;
+}

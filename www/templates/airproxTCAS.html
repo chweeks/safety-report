@@ -1,14 +1,22 @@
 <h4 class='centre'> Airprox / TCAS</h4>
 
-<label class="item item-input item-select">
-  <strong>TCAS Alert</strong><small class="error">*</small>
-  <select ng-model="FPCtrl.tcas_alert" required>
-  <option disabled selected> select an option </option>
-  <option value="TA">TA</option>
-  <option value="RA">RA</option>
-  </select>
-</label>
+<strong>TCAS Alert</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.tcas_alert" value="TA" required>
+      TA
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
 
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.tcas_alert" value="RA">
+      RA
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
 <br>
 
 <label class="item item-input item-select">
@@ -27,26 +35,42 @@
 
 <br>
 
-<label class="item item-input item-select">
-  <strong>Complied with RA Command?</strong><small class="error">*</small>
-  <select ng-model="FPCtrl.complied_with_ra_command" required>
-  <option disabled selected> select an option </option>
-  <option value="true">Yes</option>
-  <option value="false">No</option>
-  </select>
-</label>
+<strong>Complied with RA Command?</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.complied_with_ra_command" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.complied_with_ra_command" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
 
 <br>
+<br>
+<br>
 
-<label class="item item-input item-select">
-  <strong>Loss of separation?</strong><small class="error">*</small>
-  <select required ng-model="FPCtrl.loss_of_separation">
-  <option disabled selected> select an option </option>
-  <option value="true">Yes</option>
-  <option value="false">No</option>
-  </select>
-</label>
+<strong>Loss of separation?</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group3" ng-model="FPCtrl.loss_of_separation" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
 
+  <label class="item item-radio">
+    <ion-radio name="group3" ng-model="FPCtrl.loss_of_separation" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
 <br>
 
 <strong>Aircraft Vertical Speed (ft/min)</strong><small class="error">*</small>
@@ -63,13 +87,21 @@
 
 <br>
 
-<label class="item item-input item-select">
-  <strong>Reported to ATC?</strong><small class="error">*</small>
-  <select required ng-model="FPCtrl.reported_to_atc">
-  <option disabled selected> select an option </option>
-  <option value="true">True</option>
-  <option value="false">False</option>
-  </select>
-</label>
+<strong>Reported to ATC?</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group4" ng-model="FPCtrl.reported_to_atc" value="true" required>
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
 
+  <label class="item item-radio">
+    <ion-radio name="group4" ng-model="FPCtrl.reported_to_atc" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
 <br>

@@ -1,20 +1,40 @@
 <h4 class='centre'> System Failure </h4>
 
-<label class="item item-select">
 <strong>Applicable checklist performed?</strong>
-<select ng-model="FPCtrl.applicable_checklist_performed">
-  <option disabled selected> select an option </option>
-  <option type="radio" name="checklistPerformed" value="True" checked> Yes
-  <option type="radio" name="checklistPerformed" value="False"> No
-</select>
-</label>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.applicable_checklist_performed" value="true">
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.applicable_checklist_performed" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
 <br>
 
-<label class="item item-select">
 <strong>Defect entry made in Techlog?</strong>
-<select ng-model="FPCtrl.defect_entry_made_in_techlog">
-  <option disabled selected> select an option </option>
-  <option type="radio" name="techlogTrue" value="True" checked> Yes </option>
-  <option type="radio" name="techlogTrue" value="False"> No </option>
-</select>
-</label>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.defect_entry_made_in_techlog" value="true">
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.defect_entry_made_in_techlog" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>

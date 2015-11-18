@@ -80,13 +80,21 @@
 
 <br>
 
-<label class="item item-select">
 <strong>Stickshaker</strong>
-<select ng-model="FPCtrl.stickshaker">
-  <option disabled selected> select an option </option>
-  <option type="radio" name="Stickshaker" value="True" checked> Yes </option>
-  <option type="radio" name="Stickshaker" value="False"> No </option>
-</select>
-</label>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.stickshaker" value="true">
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
 
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.stickshaker" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
 <br>
