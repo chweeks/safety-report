@@ -1,17 +1,6 @@
 <h4 class='centre'>Flight Details</h4>
 
 <label class="item item-input item-select">
-  <strong>Were you the pilot flying?</strong><span class="error"> *</span>
-  <select ng-model="FPCtrl.were_you_the_pilot_flying" required>
-  <option disabled selected> select an option </option>
-  <option value="true">Yes</option>
-  <option value="false">No</option>
-  </select>
-</label>
-
-<br>
-
-<label class="item item-input item-select">
   <strong>Pilot Flying?</strong><span class="error"> *</span>
   <select ng-model="FPCtrl.pilot_flying" required>
   <option disabled selected> select an option </option>
@@ -52,7 +41,7 @@
 
 <br>
 
-<strong>Airspeed (KIAS)</strong>
+<strong>Indicated Airspeed (KIAS)</strong>
 <label class="item item-input">
   <input type="number" placeholder="Airspeed (KIAS)" ng-model="FPCtrl.airspeed_kias">
 </label>
@@ -113,7 +102,6 @@
     <option>Training</option>
     <option>Maintenance</option>
     <option>Revenue</option>
-    <option>Positioning</option>
   </select>
 </label>
 
