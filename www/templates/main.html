@@ -8,9 +8,10 @@
         <eventcategory></eventcategory>
         <eventdescription></eventdescription>
         <crewinformation></crewinformation>
-        <flightidentification></flightidentification>
-        <flightdetails></flightdetails>
-        <meteorologicalinfo></meteorologicalinfo>
+
+        <flightidentification ng-show="DLCtrl.inFlightEvent(FPCtrl.did_this_occur_in_flight)"></flightidentification>
+        <flightdetails ng-show="DLCtrl.inFlightEvent(FPCtrl.did_this_occur_in_flight)"></flightdetails>
+        <meteorologicalinfo ng-show="DLCtrl.inFlightEvent(FPCtrl.did_this_occur_in_flight)"></meteorologicalinfo>
 
         <laserbeamquestionnaire ng-show="DLCtrl.laserbeamquestionnaire(FPCtrl.event_category)"></laserbeamquestionnaire>
         <aircraftconfiguration ng-show="DLCtrl.aircraftconfiguration(FPCtrl.event_category)"></aircraftconfiguration>

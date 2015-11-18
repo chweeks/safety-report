@@ -26,6 +26,12 @@ safetyapp.controller('DynamicLoadingCtrl', [ function() {
     };
   };
 
+  self.inFlightEvent = function(response) {
+    if (response == 'true') {
+      return true
+    }
+  };
+
   self.airproxtcas = function(eventCategory) {
     if (eventCategory == 'Airprox / TCAS') {
       return true
