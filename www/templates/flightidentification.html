@@ -1,152 +1,139 @@
 <h4 class='centre'>Flight Identification</h4>
 
-<strong>Callsign</strong>
-<label class="item item-input">
-  <input type="text" placeholder="Callsign" ng-model="FPCtrl.callsign">
-</label>
+<div ng-controller="aircraftTypeCtrl as ATCtrl">
+  <strong>Callsign</strong>
+  <label class="item item-input">
+    <input type="text" placeholder="Callsign" ng-model="FPCtrl.callsign">
+  </label>
 
-<br>
+  <br>
 
-<strong>Diversion Airport</strong>
-<label class="item item-input">
-  <input type="text" placeholder="Diversion Airport" style="text-transform:uppercase" ng-model="FPCtrl.diversion_airport">
-</label>
+  <strong>Diversion Airport</strong>
+  <label class="item item-input">
+    <input type="text" placeholder="Diversion Airport" style="text-transform:uppercase" ng-model="FPCtrl.diversion_airport">
+  </label>
 
-<br>
+  <br>
 
-<label class="item item-input item-select">
-  <div class="input-label">
-    <strong>Tail Number</strong><span class="error"> *</span>
-  </div>
-  <select ng-model="FPCtrl.tail_number" required>
-    <option disabled selected> select an option </option>
-    <option>CS-DXE</option>
-    <option>CS-DXF</option>
-    <option>CS-DXG</option>
-    <option>CS-DXH</option>
-    <option>CS-DXI</option>
-    <option>CS-DXJ</option>
-    <option>CS-DXK</option>
-    <option>CS-DXL</option>
-    <option>CS-DXM</option>
-    <option>CS-DXN</option>
-    <option>CS-DXO</option>
-    <option>CS-DXP</option>
-    <option>CS-DXQ</option>
-    <option>CS-DXR</option>
-    <option>CS-DXS</option>
-    <option>CS-DXT</option>
-    <option>CS-DXU</option>
-    <option>CS-DXV</option>
-    <option>CS-DXW</option>
-    <option>CS-DXX</option>
-    <option>CS-DXY</option>
-    <option>CS-DXZ</option>
-    <option>CS-DQA</option>
-    <option>CS-DQB</option>
-    <option>CS-DRG</option>
-    <option>CS-DRH</option>
-    <option>CS-DRI</option>
-    <option>CS-DRL</option>
-    <option>CS-DRN</option>
-    <option>CS-DRO</option>
-    <option>CS-DRP</option>
-    <option>CS-DRQ</option>
-    <option>CS-DRR</option>
-    <option>CS-DRS</option>
-    <option>CS-DRT</option>
-    <option>CS-DRU</option>
-    <option>CS-DRV</option>
-    <option>CS-DRW</option>
-    <option>CS-DRX</option>
-    <option>CS-DRY</option>
-    <option>CS-DRZ</option>
-    <option>CS-DUA</option>
-    <option>CS-DUB</option>
-    <option>CS-DUC</option>
-    <option>CS-DUD</option>
-    <option>CS-DUE</option>
-    <option>CS-DUF</option>
-    <option>CS-DUG</option>
-    <option>CS-DUH</option>
-    <option>CS-DFD</option>
-    <option>CS-DNR</option>
-    <option>CS-DNS</option>
-    <option>CS-DFF</option>
-    <option>CS-DFG</option>
-    <option>CS-DFK</option>
-    <option>CS-DLB</option>
-    <option>CS-DLC</option>
-    <option>CS-DLD</option>
-    <option>CS-DLE</option>
-    <option>CS-DLF</option>
-    <option>CS-DLG</option>
-    <option>CS-DLH</option>
-    <option>CS-DSB</option>
-    <option>CS-DSD</option>
-    <option>CS-DKD</option>
-    <option>CS-DKE</option>
-    <option>CS-DKF</option>
-    <option>CS-DKG</option>
-    <option>CS-DKH</option>
-    <option>CS-DKI</option>
-    <option>CS-DKJ</option>
-    <option>CS-DKK</option>
-    <option>CS-TSL</option>
-    <option>CS-GLA</option>
-    <option>CS-GLB</option>
-    <option>CS-GLC</option>
-    <option>CS-GLD</option>
-    <option>CS-GLE</option>
-    <option>CS-GLF</option>
-    <option>CS-GLA</option>
-    <option>CS-GLB</option>
-    <option>CS-GLC</option>
-    <option>CS-PHA</option>
-    <option>CS-PHB</option>
-    <option>CS-PHC</option>
-    <option>CS-PHD</option>
-    <option>CS-PHE</option>
-    <option>CS-PHF</option>
-    <option>CS-PHG</option>
-    <option>CS-PHH</option>
-  </select>
-</label>
+  <label class="item item-input item-select">
+    <div class="input-label">
+      <strong>Tail Number</strong><span class="error"> *</span>
+    </div>
+    <select ng-model="FPCtrl.tail_number" ng-change="ATCtrl.aircraftTypeLoad(FPCtrl.tail_number)"required>
+      <option disabled selected> select an option </option>
+      <option>CS-DXE</option>
+      <option>CS-DXF</option>
+      <option>CS-DXG</option>
+      <option>CS-DXH</option>
+      <option>CS-DXI</option>
+      <option>CS-DXJ</option>
+      <option>CS-DXK</option>
+      <option>CS-DXL</option>
+      <option>CS-DXM</option>
+      <option>CS-DXN</option>
+      <option>CS-DXO</option>
+      <option>CS-DXP</option>
+      <option>CS-DXQ</option>
+      <option>CS-DXR</option>
+      <option>CS-DXS</option>
+      <option>CS-DXT</option>
+      <option>CS-DXU</option>
+      <option>CS-DXV</option>
+      <option>CS-DXW</option>
+      <option>CS-DXX</option>
+      <option>CS-DXY</option>
+      <option>CS-DXZ</option>
+      <option>CS-DQA</option>
+      <option>CS-DQB</option>
+      <option>CS-DRG</option>
+      <option>CS-DRH</option>
+      <option>CS-DRI</option>
+      <option>CS-DRL</option>
+      <option>CS-DRN</option>
+      <option>CS-DRO</option>
+      <option>CS-DRP</option>
+      <option>CS-DRQ</option>
+      <option>CS-DRR</option>
+      <option>CS-DRS</option>
+      <option>CS-DRT</option>
+      <option>CS-DRU</option>
+      <option>CS-DRV</option>
+      <option>CS-DRW</option>
+      <option>CS-DRX</option>
+      <option>CS-DRY</option>
+      <option>CS-DRZ</option>
+      <option>CS-DUA</option>
+      <option>CS-DUB</option>
+      <option>CS-DUC</option>
+      <option>CS-DUD</option>
+      <option>CS-DUE</option>
+      <option>CS-DUF</option>
+      <option>CS-DUG</option>
+      <option>CS-DUH</option>
+      <option>CS-DFD</option>
+      <option>CS-DNR</option>
+      <option>CS-DNS</option>
+      <option>CS-DFF</option>
+      <option>CS-DFG</option>
+      <option>CS-DFK</option>
+      <option>CS-DLB</option>
+      <option>CS-DLC</option>
+      <option>CS-DLD</option>
+      <option>CS-DLE</option>
+      <option>CS-DLF</option>
+      <option>CS-DLG</option>
+      <option>CS-DLH</option>
+      <option>CS-DSB</option>
+      <option>CS-DSD</option>
+      <option>CS-DKD</option>
+      <option>CS-DKE</option>
+      <option>CS-DKF</option>
+      <option>CS-DKG</option>
+      <option>CS-DKH</option>
+      <option>CS-DKI</option>
+      <option>CS-DKJ</option>
+      <option>CS-DKK</option>
+      <option>CS-TSL</option>
+      <option>CS-GLA</option>
+      <option>CS-GLB</option>
+      <option>CS-GLC</option>
+      <option>CS-GLD</option>
+      <option>CS-GLE</option>
+      <option>CS-GLF</option>
+      <option>CS-GLA</option>
+      <option>CS-GLB</option>
+      <option>CS-GLC</option>
+      <option>CS-PHA</option>
+      <option>CS-PHB</option>
+      <option>CS-PHC</option>
+      <option>CS-PHD</option>
+      <option>CS-PHE</option>
+      <option>CS-PHF</option>
+      <option>CS-PHG</option>
+      <option>CS-PHH</option>
+    </select>
+  </label>
 
-<br>
+  <br>
 
-<label class="item item-input item-select">
-  <div class="input-label">
-    <strong>Aircraft Type</strong><span class="error"> *</span>
-  </div>
-  <select ng-model="FPCtrl.aircraft_type" required>
-    <option disabled selected> select an option </option>
-    <option>CE-560XLS</option>
-    <option>HS-125-800XPC</option>
-    <option>HS-125-750</option>
-    <option>DA-2000</option>
-    <option>DA-2EASY</option>
-    <option>DA-7X</option>
-    <option>G-550</option>
-    <option>GL5000S</option>
-    <option>GL6000S</option>
-    <option>CL-350S</option>
-    <option>EMB-505S</option>
-  </select>
-</label>
+  <strong>Aircraft Type</strong><span class="error"> *</span>
+  <label class="item item-input">
+    <input type="text" placeholder="Aircraft Type" ng-model="ATCtrl.aircraft_type" required>
+  </label>
 
-<br>
+  <br>
 
-<strong>Route From</strong><span class="error"> *</span>
-<label class="item item-input">
-  <input type="text" placeholder="Route From" style="text-transform:uppercase" ng-model="FPCtrl.route_from" required>
-</label>
+  <strong>Route From</strong><span class="error"> *</span>
+  <label class="item item-input">
+    <input type="text" placeholder="Route From" style="text-transform:uppercase" ng-model="FPCtrl.route_from" required>
+  </label>
 
-<br>
+  <br>
 
-<strong>Route To</strong><span class="error"> *</span>
-<label class="item item-input">
-  <input type="text" placeholder="Route To" style="text-transform:uppercase" ng-model="FPCtrl.route_to"required>
-</label>
+  <strong>Route To</strong><span class="error"> *</span>
+  <label class="item item-input">
+    <input type="text" placeholder="Route To" style="text-transform:uppercase" ng-model="FPCtrl.route_to"required>
+  </label>
 
-<br>
+  <br>
+</div>
