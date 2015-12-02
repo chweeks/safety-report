@@ -1,0 +1,160 @@
+<h4 class='centre'>Flight Details</h4>
+
+<strong>Pilot Flying?</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.pilot_flying" value="PIC" required>
+      PIC
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.pilot_flying" value="SIC">
+      SIC
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
+
+<strong>Pilot Flying Seat?</strong><small class="error">*</small>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.pilot_flying_seat" value='Right' required>
+      Right
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.pilot_flying_seat" value="Left">
+      Left
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
+
+<strong>Runway Used</strong>
+<label class="item item-input">
+  <input type="text" placeholder="Runway Used" ng-model="FPCtrl.runway_used">
+</label>
+
+<br>
+
+<strong>Aircraft Altitude</strong><small class="error">*</small>
+<div class="inline">
+  <input type="number" placeholder="Aircraft Altitude" ng-model="FPCtrl.aircraft_altitude">
+  <label class="item item-radio">
+    <ion-radio name="group3" ng-model="FPCtrl.aircraft_altitude_units" value='ft' required>
+      ft
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group3" ng-model="FPCtrl.aircraft_altitude_units" value="FL">
+      FL
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
+
+<strong>Indicated Airspeed (KIAS)</strong>
+<label class="item item-input">
+  <input type="number" placeholder="Airspeed (KIAS)" ng-model="FPCtrl.airspeed_kias">
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  <strong>Flight Phase at Start of Event</strong>
+  <div class="input-label">
+  </div>
+  <select ng-model="FPCtrl.flight_phase_at_start_of_event">
+    <option disabled selected> select an option </option>
+    <option>Non-Flight</option>
+    <option>Predeparture / Preflight</option>
+    <option>Engine Start / Pushback</option>
+    <option>Taxi-Out</option>
+    <option>Takeoff</option>
+    <option>Climb</option>
+    <option>Cruise</option>
+    <option>Holding</option>
+    <option>Descent</option>
+    <option>Approach</option>
+    <option>Go Around</option>
+    <option>Landing</option>
+    <option>Landing Flare</option>
+    <option>Rollout Landing</option>
+    <option>Taxi-In</option>
+    <option>Arrival Shutdown</option>
+    <option>Parked</option>
+    <option>Postflight</option>
+    <option>Towing</option>
+  </select>
+</label>
+
+<br>
+
+<strong>A/C Weight</strong><small class="error">*</small>
+<div class="inline">
+  <input type="number" placeholder="A/C Weight" ng-model="FPCtrl.ac_weight">
+  <label class="item item-radio">
+    <ion-radio name="group4" ng-model="FPCtrl.ac_weight_units" value='ft' required>
+      Kg
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group4" ng-model="FPCtrl.ac_weight_units" value="FL">
+      lb
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<label class="item item-input item-select">
+  <div class="input-label">
+    <strong>Type of Flight</strong>
+  </div>
+  <select ng-model="FPCtrl.type_of_flight">
+    <option disabled selected> select an option </option>
+    <option>Admin</option>
+    <option>OCF</option>
+    <option>Ferry</option>
+    <option>Training</option>
+    <option>Maintenance</option>
+    <option>Revenue</option>
+  </select>
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  <div class="input-label">
+    <strong>Event Runway Conditions<strong>
+  </div>
+  <select ng-model="FPCtrl.event_runway_conditions">
+    <option disabled selected> select an option </option>
+    <option>Dry</option>
+    <option>Wet</option>
+    <option>Snow</option>
+    <option>Slush</option>
+    <option>Standing Water</option>
+    <option>Ice</option>
+    <options>Other</options>
+    <option>N/A</option>
+  </select>
+</label>
+
+<br>

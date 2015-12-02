@@ -1,0 +1,73 @@
+<h4 class='centre'>Events Category</h4>
+
+<label class="item item-input item-select">
+  <div class="input-label">
+    <strong>Event Type:</strong><span class="error"> *</span>
+  </div>
+  <select ng-model="FPCtrl.event_category" required>
+    <option disabled selected> select an option </option>
+    <option>Aircraft Limit Exceedance</option>
+    <option>Aircraft Part Discrepancy</option>
+    <option>Airport Hazards</option>
+    <option>Airprox / TCAS</option>
+    <option>Airworthiness Concerns</option>
+    <option>Altitude Deviation</option>
+    <option>ATC Incident</option>
+    <option>Automation</option>
+    <option>Cabin and Cargo Management</option>
+    <option>Catering</option>
+    <option>Communication Hazards</option>
+    <option>Company Documentation / Policies</option>
+    <option>Configuration Warnings</option>
+    <option>Crew Help</option>
+    <option>CRM</option>
+    <option>EGPWS</option>
+    <option>Emergency Safety Equipment Hazards</option>
+    <option>Fire / Sparks / Smoke / Fumes</option>
+    <option>Flight / Duty Time Exceeded</option>
+    <option>Fuel Event</option>
+    <option>Ground Incident</option>
+    <option>Inadequate Terrain Clearance</option>
+    <option>Laser Beam Exposure</option>
+    <option>Maintenance Error</option>
+    <option>Nav Database</option>
+    <option>Navigation Error</option>
+    <option>Passenger</option>
+    <option>Procedural Deviation</option>
+    <option>Regulatory Compliance</option>
+    <option>Runway Excursion</option>
+    <option>Runway Incursion</option>
+    <option>Security</option>
+    <option>Speed Deviation</option>
+    <option>Stick Shaker / Stall Warning</option>
+    <option>System Failure</option>
+    <option>Taxiway Excursion</option>
+    <option>Taxiway incursion</option>
+    <option>Unstable Approach</option>
+    <option>Wake Turbulence</option>
+    <option>Weather</option>
+    <option>Wildlife Strike</option>
+    <option>Other</option>
+  </select>
+</label>
+
+<br>
+
+<strong>Did this occur in flight?</strong>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.did_this_occur_in_flight" value="true">
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.did_this_occur_in_flight" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>

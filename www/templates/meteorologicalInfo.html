@@ -1,0 +1,156 @@
+<h4 class='centre'>Meterorological Information</h4>
+
+<strong>Temperature </strong>&deg;C
+<label class="item item-input">
+  <input type="text" placeholder="Temperature &deg;C" ng-model="FPCtrl.temperature_c">
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  <div class="input-label">
+    <strong>Meteorolical Conditions</strong>
+  </div>
+  <select ng-model="FPCtrl.meteorological_conditions">
+    <option disabled selected> select an option </option>
+    <option>CAT I</option>
+    <option>Cat II/III</option>
+    <option>IMC</option>
+    <option>VMC</option>
+    <option>Marginal</option>
+    <option>Below Mins</option>
+  </select>
+</label>
+
+<br>
+
+<strong>Visibility</strong>
+<div class="inline">
+  <label class="item item-input">
+    <input type="text" placeholder="Visibility" ng-model="FPCtrl.visibility">
+  </label>
+  <label class="item item-radio">
+    <ion-radio name="group3" ng-model="FPCtrl.msm_visibility" value="m">
+      m
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group3" ng-model="FPCtrl.msm_visibility" value="SM">
+      SM
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<strong>Wind Direction</strong>
+<label class="item item-input">
+  <input type="text" placeholder="Wind Direction" ng-model="FPCtrl.wind_direction">
+</label>
+
+<br>
+
+<strong>Wind Velocity</strong>
+<label class="item item-input">
+  <input type="text" placeholder="Wind Velocity" ng-model="FPCtrl.wind_velocity">
+</label>
+
+<br>
+
+<strong>QNH</strong>
+<label class="item item-input">
+  <input type="text" placeholder="QNH" ng-model="FPCtrl.qnh">
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  <div class="input-label">
+    <strong>Icing</strong>
+  </div>
+  <select ng-model="FPCtrl.icing">
+    <option disabled selected> select an option </option>
+    <option>Light</option>
+    <option>Moderate</option>
+    <option>Severe</option>
+  </select>
+</label>
+
+<br>
+
+<label class="item item-input item-select">
+  <div class="input-label">
+    <strong>Turbulence</strong>
+  </div>
+  <select ng-model="FPCtrl.turbulence">
+    <option disabled selected> select an option </option>
+    <option>Light</option>
+    <option>Moderate</option>
+    <option>Severe</option>
+  </select>
+</label>
+
+<br>
+
+<strong>Rain?<strong>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.rain" value="true">
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group1" ng-model="FPCtrl.rain" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
+
+<strong>Thunderstorms?</strong>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.thunderstorms" value="true">
+      Yes
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group2" ng-model="FPCtrl.thunderstorms" value="false">
+      No
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
+
+<strong>Meteorological Conditions</strong>
+<div class="inline">
+  <label class="item item-radio">
+    <ion-radio name="group4" ng-model="FPCtrl.meteorological_conditions_iv" value="VMC">
+      VMC
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <label class="item item-radio">
+    <ion-radio name="group4" ng-model="FPCtrl.meteorological_conditions_iv" value="IMC">
+      IMC
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
