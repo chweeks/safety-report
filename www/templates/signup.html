@@ -2,107 +2,9 @@
 
   <button class="button button-block button-positive" ui-sref="signIn">Back to sign in</button>
 
-  <div class="list">
-    <strong>Name</strong>
-    <label class="item item-input">
-      <input type="text" ng-model="name" placeholder="Name" required>
-    </label>
-
-    <br>
-
-    <strong>Job Title</strong>
-    <label class="item item-input">
-      <input type="text" placeholder="Job Title" required>
-    </label>
-
-    <br>
-
-    <strong>Department</strong>
-    <label class="item item-input">
-      <input type="text" placeholder="Department">
-    </label>
-
-    <br>
-
-    <label class="item item-input item-select">
-      <div class="input-label">
-        <strong>Subsidiary</strong>
-      </div>
-      <select>
-        <option disabled selected> select an option </option>
-        <option>NetJets Aviation</option>
-        <option>NetJets Sales</option>
-        <option>NetJets Services</option>
-        <option>Marquis Jet Partners</option>
-        <option>Executive Jet Management</option>
-        <option>Executive Jet Management China</option>
-        <option>Executive Jet Management Europe</option>
-        <option>NTA</option>
-        <option>Other</option>
-      </select>
-    </label>
-
-    <br>
-
-    <strong>Primary Phone</strong>
-    <label class="item item-input">
-      <input type="tel" ng-model="primaryphone" placeholder="Primary Phone" required>
-    </label>
-
-    <br>
-
-    <strong>Secondary Phone</strong>
-    <label class="item item-input">
-      <input type="tel" ng-model="secondaryphone" placeholder="Secondary Phone" required>
-    </label>
-
-    <br>
-
     <strong>Username</strong>
     <label class="item item-input">
-      <input type="email" ng-model="email" placeholder="Email" required>
-    </label>
-
-    <br>
-
-    <strong>Address</strong>
-    <label class="item item-input">
-      <input type="text" ng-model="address" placeholder="Address" required>
-    </label>
-
-    <br>
-
-    <strong>Rank</strong>
-    <label class="item item-input">
-      <input type="text" ng-model="rank" placeholder="Rank" required>
-    </label>
-
-    <br>
-
-    <label class="item item-input item-select">
-      <div class="input-label">
-        <strong>Home Base</strong>
-      </div>
-      <select required>
-        <option disabled selected> select an option </option>
-        <option>Airport option 1</option>
-        <option>Airport option 2</option>
-        <option>Airport option 3</option>
-      </select>
-    </label>
-
-    <br>
-
-    <strong>Crew Member Aircraft Type</strong>
-    <label class="item item-input">
-      <input type="text" ng-model="crewmemtype" placeholder="Crew Member Aircraft Type">
-    </label>
-
-    <br>
-
-    <strong>Other Employee Name</strong>
-    <label class="item item-input">
-      <input type="text" ng-model="otheremployee" placeholder="Other Employee Name">
+      <input type="text" ng-model="username" placeholder="Username" required>
     </label>
 
     <br>
@@ -121,6 +23,6 @@
 
     <br>
 
-    <button class="button button-block button-positive" ng-click="signup.postSignUp(email, password, passwordconf, name, address, primaryphone, secondaryphone, rank, crewmemtype, otheremployee)">Sign Up</button>
+    <button class="button button-block button-positive" ng-click="signup.postSignUp(username, password, passwordconf)">Sign Up</button>
   </div>
 </ion-content>
