@@ -1,6 +1,6 @@
 <ion-content class="marginTop" ng-controller="signUpCtrl as signup">
 
-  <button class="button button-block button-positive" ui-sref="signIn">Back to sign in</button>
+    <button class="button button-block button-positive" ui-sref="signIn">Back to sign in</button>
 
     <strong>Username</strong>
     <label class="item item-input">
@@ -9,7 +9,7 @@
 
     <br>
 
-    <strong>Password</strong>
+    <strong>Password</strong><span class="error"> must be atleast 8 characters</span>
     <label class="item item-input">
       <input type="password" ng-model="password" placeholder="Password">
     </label>
