@@ -46,23 +46,24 @@
 <br>
 
 <strong>Aircraft Altitude</strong><small class="error">*</small>
-<div class="inline">
+<label class="item item-input">
   <input type="number" placeholder="Aircraft Altitude" ng-model="FPCtrl.aircraft_altitude">
-  <label class="item item-radio">
-    <ion-radio name="group3" ng-model="FPCtrl.aircraft_altitude_units" value='ft' required>
-      ft
-    <i class="radio-icon ion-checkmark"></i>
-  </label>
-
-  <label class="item item-radio">
-    <ion-radio name="group3" ng-model="FPCtrl.aircraft_altitude_units" value="FL">
-      FL
-    <i class="radio-icon ion-checkmark"></i>
-  </label>
-</div>
+</label>
 
 <br>
-<br>
+
+<label class="item item-radio">
+  <ion-radio name="group3" ng-model="FPCtrl.aircraft_altitude_units" value='ft' required>
+    ft
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+
+<label class="item item-radio">
+  <ion-radio name="group3" ng-model="FPCtrl.aircraft_altitude_units" value="FL">
+    FL
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+
 <br>
 
 <strong>Indicated Airspeed (KIAS)</strong>
@@ -103,24 +104,24 @@
 <br>
 
 <strong>A/C Weight</strong><small class="error">*</small>
-<div class="inline">
+<label class="item item-input">
   <input type="number" placeholder="A/C Weight" ng-model="FPCtrl.ac_weight">
-  <label class="item item-radio">
-    <ion-radio name="group4" ng-model="FPCtrl.ac_weight_units" value='ft' required>
-      Kg
-    <i class="radio-icon ion-checkmark"></i>
-  </label>
-
-  <label class="item item-radio">
-    <ion-radio name="group4" ng-model="FPCtrl.ac_weight_units" value="FL">
-      lb
-    <i class="radio-icon ion-checkmark"></i>
-  </label>
-</div>
+</label>
 
 <br>
-<br>
-<br>
+
+<label class="item item-radio">
+  <ion-radio name="group4" ng-model="FPCtrl.ac_weight_units" value='ft' required>
+    Kg
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+
+<label class="item item-radio">
+  <ion-radio name="group4" ng-model="FPCtrl.ac_weight_units" value="FL">
+    lb
+  <i class="radio-icon ion-checkmark"></i>
+</label>
+
 <br>
 
 <label class="item item-input item-select">
